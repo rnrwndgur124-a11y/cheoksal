@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1013">
+<meta name="naver-site-verification" content="2336d2ef14a7294a011115773485953c093d8103" />
+<title>일랜시아 모바일(일랜시아M) 공략·쿠폰·직업 추천 | 일랜시아노트</title>
+<meta name="description" content="일랜시아 모바일(일랜시아M) 출시일 12월 1일, 쿠폰, 사전예약 보상, 전투·생활 직업 추천과 도감, 첫날 가이드, 원작 비교, 공략 영상까지 한곳에. 비공식 팬 사이트.">
+<meta name="keywords" content="일랜시아 모바일, 일랜시아M, 일랜시아 모바일 쿠폰, 일랜시아 모바일 직업 추천, 일랜시아 모바일 출시일, 일랜시아 사전예약, 일랜시아 공략">
+<meta property="og:title" content="일랜시아 모바일(일랜시아M) 공략·쿠폰·직업 추천 | 일랜시아노트">
+<meta property="og:description" content="출시일, 쿠폰, 직업 도감과 추천, 첫날 가이드, 공략 영상을 한곳에서.">
+<meta property="og:image" content="https://elancianote.com/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://elancianote.com/">
+<meta property="og:url" content="https://elancianote.com/">
+<meta property="og:site_name" content="일랜시아노트">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"일랜시아 모바일 출시일은?","acceptedAnswer":{"@type":"Answer","text":"2026년 12월 1일 오전 11시. 11월 27일부터 사전 다운로드와 캐릭터 사전 생성."}},{"@type":"Question","name":"일랜시아 모바일 PC로 할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"안드로이드, iOS, PC 런처를 지원합니다."}},{"@type":"Question","name":"일랜시아 모바일 직업은?","acceptedAnswer":{"@type":"Answer","text":"전투 직업 7종(무도가, 투사, 검객, 자객, 궁사, 검사, 악사)과 생활 직업 8종(자연인, 광부, 미용사, 대장장이, 재단사, 목공사, 세공사, 연금술사)."}}]}</script>
+<style>
+/* VOICE a professional game portal (Inven / OP.GG grade): calm, dense, trustworthy
+   IDEA the official guidebook of Elancia, laid out like a live game database
+   PICTURE the official character lineup banner across the top; real in-game shots on every card
+   COLOUR charcoal ground, raised panels, one restrained Elancia gold, jade for "done" states
+   TYPE Pretendard (fallback Noto Sans KR) for everything, Cinzel only for the small ELANCIA wordmark
+   LAYOUT full-bleed banner with title + countdown; then 8/4 main + sticky sidebar; phone: single column */
+:root{color-scheme:dark;--bg:#0e1013;--bg2:#121519;--card:#171a20;--card2:#1c2028;--line:#262b34;--line2:#323946;--ink:#eceef2;--sub:#a3abb8;--dim:#737c8a;--gold:#d9b15f;--gold2:#b38a3a;--jade:#4cc38a;--sky:#6ab7ff;--red:#e5484d;--r:12px;--font:"Pretendard Variable",Pretendard,"Noto Sans KR",system-ui,sans-serif}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.65 var(--font);word-break:keep-all;overflow-wrap:anywhere;letter-spacing:-.005em;overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.25;letter-spacing:-.02em;text-wrap:balance}
+img{max-width:100%;display:block}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left));padding-right:max(24px,env(safe-area-inset-right))}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;z-index:99;background:var(--gold);color:#111;padding:8px 12px;border-radius:8px}
+:focus-visible{outline:2px solid var(--sky);outline-offset:2px;border-radius:6px}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgb(14 16 19/.88);backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:28px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:26px;height:26px}
+.brand b{font-size:17px;font-weight:800;letter-spacing:-.03em}
+.brand small{display:block;font:600 10px/1 "Cinzel",serif;color:var(--gold);letter-spacing:.18em;margin-top:2px}
+.nav{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{padding:8px 12px;border-radius:8px;color:var(--sub);font-size:14.5px;font-weight:500;white-space:nowrap;flex:none}
+.nav a:hover{color:var(--ink);background:var(--card)}
+.sbtn{display:flex;align-items:center;gap:10px;height:38px;padding:0 12px;min-width:220px;background:var(--card);border:1px solid var(--line);border-radius:10px;color:var(--dim);font:inherit;font-size:14px;cursor:pointer}
+.sbtn:hover{border-color:var(--line2)}
+.sbtn kbd{margin-left:auto;font:600 11px var(--font);border:1px solid var(--line2);border-radius:5px;padding:1px 6px;color:var(--sub)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:#0b0d10}
+.hero .bg{position:absolute;inset:0;background:#1a2a1e center 65%/cover no-repeat}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgb(10 12 15/.95) 0%,rgb(10 12 15/.82) 38%,rgb(10 12 15/.35) 70%,rgb(10 12 15/.55) 100%),linear-gradient(0deg,var(--bg) 0%,transparent 40%)}
+.hero .in{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:40px;align-items:center;padding-top:64px;padding-bottom:40px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--gold);background:rgb(217 177 95/.1);border:1px solid rgb(217 177 95/.28);padding:4px 10px;border-radius:99px}
+.eyebrow i{width:6px;height:6px;border-radius:99px;background:var(--jade);box-shadow:0 0 0 3px rgb(76 195 138/.2)}
+.hero h1{font-size:clamp(34px,4.6vw,52px);font-weight:800;margin:16px 0 12px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{color:#c7ccd5;font-size:17px;max-width:34em;margin:0 0 24px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}.cta .btn{padding:0 22px;min-width:150px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;padding:0 20px;border-radius:10px;font:inherit;font-size:15px;font-weight:700;cursor:pointer;border:1px solid transparent;transition:background .15s,border-color .15s}
+.btn.pri{background:var(--gold);color:#17130a}
+.btn.pri:hover{background:#e6c072}
+.btn.sec{background:rgb(255 255 255/.06);border-color:rgb(255 255 255/.14);color:var(--ink)}
+.btn.sec:hover{background:rgb(255 255 255/.1)}
+.btn.sm{height:36px;padding:0 14px;font-size:13.5px;white-space:nowrap;flex:none}
+.cdbox{background:rgb(23 26 32/.82);backdrop-filter:blur(8px);border:1px solid var(--line2);border-radius:16px;padding:20px}
+.cdbox .t{display:flex;justify-content:space-between;align-items:center;font-size:13.5px;color:var(--sub)}
+.cdbox .t b{color:var(--ink);font-weight:600}
+.cd{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:14px 0}
+.cd div{background:#0f1216;border:1px solid var(--line);border-radius:10px;padding:12px 0 8px;text-align:center}
+.cd b{display:block;font-size:30px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+.cd span{font-size:12px;color:var(--dim)}
+.cdbox .note{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--sub);padding-top:12px;border-top:1px solid var(--line)}
+.cdbox .note i{width:8px;height:8px;border-radius:99px;background:var(--gold);flex:none}
+.stats{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:var(--r);background:rgb(23 26 32/.7);backdrop-filter:blur(6px);margin-bottom:28px}
+.stats div{padding:14px 18px;border-left:1px solid var(--line)}
+.stats div:first-child{border-left:0}
+.stats b{display:block;font-size:17px;font-weight:700}
+.stats span{font-size:13px;color:var(--dim)}
+
+/* layout */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:32px;padding-top:32px;padding-bottom:64px;align-items:start}
+.side{position:sticky;top:76px;display:grid;gap:16px;max-height:calc(100vh - 92px);overflow:auto;scrollbar-width:thin;padding-bottom:4px}
+.sec{padding:28px 0;border-top:1px solid var(--line)}
+.sec:first-child{padding-top:0;border-top:0}
+.sh{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:8px 16px;margin-bottom:18px}
+.sh h2{font-size:22px;font-weight:800}
+.sh p{margin:4px 0 0;color:var(--sub);font-size:14.5px}
+.tag{font-size:12px;font-weight:600;color:var(--sub);background:var(--card2);border:1px solid var(--line);padding:2px 8px;border-radius:6px;white-space:nowrap}
+.tag.g{color:var(--gold);border-color:rgb(217 177 95/.3);background:rgb(217 177 95/.08)}
+.tag.j{color:var(--jade);border-color:rgb(76 195 138/.3);background:rgb(76 195 138/.08)}
+
+/* panels */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+.ph{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.ph h3{font-size:15px;font-weight:700}
+.pb{padding:14px 16px}
+
+/* segmented tabs */
+.seg{display:inline-flex;gap:2px;padding:3px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;max-width:100%;overflow-x:auto}
+.seg button{font:inherit;font-size:13.5px;font-weight:600;color:var(--sub);background:none;border:0;border-radius:7px;padding:7px 14px;cursor:pointer;white-space:nowrap;min-height:36px}
+.seg button[aria-pressed=true]{background:var(--card2);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line2)}
+.seg button[hidden]{display:none}
+
+/* job cards */
+.dex{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:12px}
+.job{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .15s,transform .15s}
+.job:hover{border-color:var(--line2);transform:translateY(-2px)}
+.job .im{position:relative;aspect-ratio:1/1;background:#0f1216;display:grid;place-items:center;overflow:hidden}
+.job .im img{width:100%;height:100%;object-fit:cover}
+.job .im img.play{position:absolute;inset:0;opacity:0;transition:opacity .25s}
+.job:hover .im img.play,.job:focus-within .im img.play{opacity:1}
+.job .im .hint{position:absolute;right:8px;bottom:8px;font-size:11px;font-weight:600;color:#fff;background:rgb(14 16 19/.7);padding:2px 7px;border-radius:6px;opacity:.9}
+.job:hover .im .hint{opacity:0}
+.hdcta{flex:none;height:38px;padding:0 14px;border-radius:10px;background:var(--gold);color:#17130a;font-weight:700;font-size:14px;display:inline-flex;align-items:center}
+.hdcta:hover{background:#e6c072}
+.job .im svg{width:44%;height:44%}
+.job .im .tag{position:absolute;left:8px;top:8px;background:rgb(14 16 19/.78);backdrop-filter:blur(4px)}
+.job .tx{padding:12px 14px 14px}
+.job b{display:block;font-size:16.5px;font-weight:700;margin-bottom:2px}
+.job span{font-size:13.5px;color:var(--sub);line-height:1.55}
+
+/* tables */
+.tbl{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;overflow-x:auto;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--bg2);color:var(--dim);font-size:12.5px;font-weight:600}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:rgb(255 255 255/.02)}
+td:first-child{font-weight:600;white-space:nowrap;color:var(--ink)}
+td{color:var(--sub)}
+td.hi{color:var(--ink)}
+td .pick{color:var(--gold);font-weight:700;white-space:nowrap}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.gal figure{margin:0;border-radius:var(--r);overflow:hidden;background:var(--card);border:1px solid var(--line);position:relative}
+.gal img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .4s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figcaption{position:absolute;inset:auto 0 0;padding:28px 14px 12px;background:linear-gradient(transparent,rgb(0 0 0/.85));font-size:14px;font-weight:600}
+.gal figcaption span{display:block;font-weight:400;font-size:12.5px;color:#c4c9d2}
+.credit{font-size:12px;color:var(--dim);margin-top:10px}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:32px minmax(0,1fr);gap:2px 14px;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+.steps li::before{content:counter(s);grid-row:span 2;width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:rgb(217 177 95/.12);color:var(--gold);font-weight:800;font-size:15px}
+.steps b{font-size:15px}
+.steps p{margin:0;font-size:14px;color:var(--sub)}
+
+/* videos */
+.vid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.vc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.vplay{all:unset;display:block;position:relative;cursor:pointer;width:100%;aspect-ratio:16/9;background:#0f1216 center/cover}
+.vplay img{width:100%;height:100%;object-fit:cover}
+.vplay i{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:54px;height:38px;border-radius:11px;background:rgb(229 72 77/.95);display:grid;place-items:center;box-shadow:0 6px 20px rgb(0 0 0/.45)}
+.vplay i::after{content:"";border-left:13px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+.vplay:focus-visible{outline:2px solid var(--sky);outline-offset:-2px}
+.vframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+.vc .tx{padding:11px 13px 13px}
+.vc b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:14px;font-weight:600;line-height:1.45}
+.vc span{font-size:12.5px;color:var(--dim)}
+.vc a{color:var(--sky)}
+.crs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.crs a{display:flex;gap:12px;align-items:center;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+.crs a:hover{border-color:var(--line2)}
+.crs i{width:36px;height:36px;border-radius:99px;background:var(--card2);display:grid;place-items:center;flex:none;font-style:normal;font-weight:800;color:var(--gold);font-size:14px}
+.crs b{display:block;font-size:14px}
+.crs span{font-size:12.5px;color:var(--dim)}
+
+/* faq / news */
+.faq{display:grid;gap:8px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+.faq summary{list-style:none;cursor:pointer;padding:15px 18px;font-weight:600;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--dim);font-size:20px;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0;padding:0 18px 16px;color:var(--sub);font-size:14.5px}
+.news{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.news article{padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+.news .tag{margin-bottom:8px;display:inline-block}
+.news h3{font-size:15.5px;margin-bottom:6px}
+.news p{margin:0;font-size:14px;color:var(--sub)}
+
+/* sidebar widgets */
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:62px 14px minmax(0,1fr);gap:10px;align-items:start;padding:7px 0;position:relative}
+.tl li::after{content:"";position:absolute;left:78px;top:24px;bottom:-8px;width:1px;background:var(--line)}
+.tl li:last-child::after{display:none}
+.tl time{font-size:12.5px;color:var(--dim);text-align:right;white-space:nowrap;padding-top:1px;font-variant-numeric:tabular-nums}
+.tl i{width:10px;height:10px;border-radius:99px;border:2px solid var(--line2);background:var(--bg);margin-top:6px}
+.tl li.past i{background:var(--jade);border-color:var(--jade)}
+.tl li.now i{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 4px rgb(217 177 95/.18)}
+.tl li.now time{color:var(--gold)}
+.tl b{font-size:14px;font-weight:600;display:block}
+.tl span{font-size:12.5px;color:var(--dim)}
+.empty{font-size:13.5px;color:var(--sub);background:var(--bg2);border:1px dashed var(--line2);border-radius:10px;padding:14px;text-align:center}
+.cp{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.cp:last-child{border-bottom:0}
+.cp b{font-family:ui-monospace,Menlo,monospace;font-size:14px;letter-spacing:.02em}
+.rw{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.rw div{background:var(--bg2);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.rw .im{aspect-ratio:16/10;background:#0f1216;display:grid;place-items:center;overflow:hidden}
+.rw .im img{width:100%;height:100%;object-fit:cover}
+.rw .im svg{width:40%;height:60%}
+.rw p{margin:0;padding:8px 10px 9px;font-size:13px;font-weight:600;line-height:1.35}
+.rw p span{display:block;font-weight:400;font-size:11.5px;color:var(--dim)}
+.calc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.calc label{display:grid;gap:4px;font-size:12.5px;color:var(--dim)}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:9px;padding:8px 10px;min-height:40px;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--gold2);outline:none}
+.out{margin-top:10px;display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:12px 14px;background:var(--bg2);border:1px solid var(--line);border-radius:10px}
+.out b{font-size:26px;font-weight:800;color:var(--gold);letter-spacing:-.03em}
+.out span{font-size:12.5px;color:var(--dim);text-align:right}
+.todo{list-style:none;margin:0;padding:0}
+.todo li{display:flex;align-items:center;gap:10px;padding:6px 0}
+.todo input[type=checkbox]{width:18px;height:18px;min-height:0;accent-color:var(--jade);flex:none}
+.todo label{flex:1;font-size:14px;cursor:pointer}
+.todo li.done label{color:var(--dim);text-decoration:line-through}
+.x{background:none;border:0;color:var(--dim);cursor:pointer;width:28px;height:28px;border-radius:6px;font-size:16px}
+.x:hover{background:var(--card2);color:var(--ink)}
+.add{display:flex;gap:6px;margin-top:8px}
+.prog{height:4px;background:var(--bg2);border-radius:99px;overflow:hidden;margin-top:10px}
+.prog i{display:block;height:100%;background:var(--jade);transition:width .3s}
+.mini{display:flex;justify-content:space-between;font-size:12.5px;color:var(--dim);margin-top:6px}
+.lb{background:none;border:0;color:var(--sky);font:inherit;font-size:12.5px;cursor:pointer;padding:0}
+.links a{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.links a:last-child{border-bottom:0}
+.links a span{color:var(--dim);font-size:12.5px}
+.links a:hover b{color:var(--gold)}
+.ad{display:none;border:1px dashed var(--line2);border-radius:var(--r);padding:8px;text-align:center;font-size:11px;color:var(--dim)}
+.ad.on{display:block}
+.fb textarea{min-height:84px;resize:vertical;font-size:14px}
+.fb .row{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:12.5px;color:var(--dim)}
+
+/* footer */
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:36px 0 48px;font-size:13px;color:var(--dim)}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:32px}
+footer h4{font-size:13px;color:var(--sub);margin-bottom:10px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+footer a:hover{color:var(--ink)}
+footer details summary{cursor:pointer;color:var(--sub)}
+footer details p{margin:6px 0 0}
+
+/* search dialog + toast */
+.dlg{position:fixed;inset:0;z-index:60;background:rgb(0 0 0/.55);backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;padding:12vh 16px 16px}
+.dlg.on{display:flex}
+.dlg .in{width:min(600px,100%);background:var(--card);border:1px solid var(--line2);border-radius:16px;box-shadow:0 30px 80px rgb(0 0 0/.5);overflow:hidden}
+.dlg input{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:16px 18px;font-size:16px}
+.res{list-style:none;margin:0;padding:6px;max-height:50vh;overflow:auto}
+.res a{display:flex;justify-content:space-between;padding:10px 12px;border-radius:8px;font-size:14.5px}
+.res a span{color:var(--dim);font-size:12.5px}
+.res a:hover,.res a:focus{background:var(--card2)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:70;background:var(--card2);border:1px solid var(--line2);color:var(--ink);padding:10px 16px;border-radius:10px;font-size:14px;display:none;box-shadow:0 12px 30px rgb(0 0 0/.4)}
+.toast.on{display:block}
+.bm{background:var(--bg2);border-bottom:1px solid var(--line);font-size:13px;color:var(--sub)}
+.bm .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:36px}
+.bm b{color:var(--gold)}
+.bm button{background:none;border:0;color:var(--dim);cursor:pointer;font:inherit;font-size:13px}
+
+@media(max-width:1080px){.layout{grid-template-columns:minmax(0,1fr)}.side{position:static;max-height:none;overflow:visible;grid-template-columns:repeat(2,minmax(0,1fr))}.sbtn{min-width:0}.sbtn span{display:none}}
+@media(max-width:860px){.hdcta{display:none}.hero .in{grid-template-columns:minmax(0,1fr);padding-top:40px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats div:nth-child(3){border-left:0}.stats div:nth-child(n+3){border-top:1px solid var(--line)}.gal,.vid,.crs{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{display:none}}
+@media(max-width:600px){.wrap{padding-left:16px;padding-right:16px}.side,.steps,.news,.gal,.vid,.crs{grid-template-columns:minmax(0,1fr)}.dex{grid-template-columns:repeat(2,minmax(0,1fr))}.hero p{font-size:15.5px}.hero h1{font-size:30px}th,td{padding:10px 12px;font-size:13.5px}.cd b{font-size:26px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media(max-width:860px){.hd{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:6px;gap:8px 16px}.hd .navlinks,.hd .nav{display:flex!important;order:3;flex-basis:100%;margin:0 -8px}.hd .nav a{padding:6px 10px;font-size:14px;flex:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+<div class="bm" id="bmbar"><div class="wrap"><span><b>★</b> <span id="bmkey">Ctrl + D</span>로 북마크해 두면 출시 날 바로 찾아올 수 있어요</span><button type="button" id="bmx" aria-label="북마크 안내 닫기">닫기 ✕</button></div></div>
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="일랜시아노트 홈">
+      <svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 1 25 13 13 25 1 13Z" fill="#d9b15f"/><path d="M13 6 20 13 13 20 6 13Z" fill="#0e1013"/><path d="M13 9.5 16.5 13 13 16.5 9.5 13Z" fill="#d9b15f"/></svg>
+      <span><b>일랜시아노트</b><small>ELANCIA NOTE</small></span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="/jobs/">직업 도감</a><a href="/recommend/">직업 추천</a><a href="/precreate/">사전 생성</a><a href="/release/">출시일</a><a href="/coupon/">쿠폰·보상</a><a href="/guide/">초보 가이드</a><a href="/compare/">원작 비교</a><a href="/video/">공략 영상</a><a href="/faq/">FAQ</a>
+    </nav>
+    <button class="sbtn" id="sbtn" type="button" aria-label="검색 열기"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m11 11 3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>직업, 쿠폰, 출시일 검색</span><kbd>/</kbd></button>
+    <a class="hdcta" href="https://play.gameduo.net/el" target="_blank" rel="noopener">사전예약</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="bg" id="herobg"></div>
+  <div class="wrap">
+    <div class="in">
+      <div>
+        <span class="eyebrow"><i></i>일랜시아 모바일 · 일랜시아M 비공식 가이드</span>
+        <h1>25년 만에 돌아온 일랜시아,<br><em>일랜시아노트</em>에서 시작하세요</h1>
+        <p>직업 도감과 추천, 쿠폰, 사전예약 보상, 첫날 가이드, 원작 비교, 공략 영상까지. 일랜시아 모바일에 필요한 정보를 한곳에 정리했어요.</p>
+        <div class="cta"><a class="btn pri" href="#dex">직업 도감 보기</a><a class="btn sec" href="#recommend">나에게 맞는 직업</a></div>
+      </div>
+      <div class="cdbox" aria-live="polite">
+        <div class="t"><span id="cdlabel">정식 출시까지</span><b>12월 1일(화) 11:00</b></div>
+        <div class="cd"><div><b id="d">0</b><span>일</span></div><div><b id="h">0</b><span>시간</span></div><div><b id="m">0</b><span>분</span></div><div><b id="s">0</b><span>초</span></div></div>
+        <div class="note"><i></i><span id="pre"></span></div>
+      </div>
+    </div>
+    <div class="stats">
+      <div><b>12월 1일 오전 11시</b><span>정식 출시</span></div>
+      <div><b>Android · iOS · PC</b><span>PC 런처 지원</span></div>
+      <div><b>전투 7 · 생활 8</b><span>직업 15종</span></div>
+      <div><b>NEXON Replay</b><span>개발·서비스 게임듀오</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap layout" id="main">
+<main>
+  <section class="sec" id="dex">
+    <div class="sh"><div><h2>직업 도감</h2><p>공식 사전예약 페이지에 공개된 15개 직업이에요. 카드를 누르면 직업별 상세 정보로 이동해요.</p></div>
+      <div class="seg" role="group" aria-label="직업 종류"><button type="button" data-tab="fight" aria-pressed="true">전투 직업 7</button><button type="button" data-tab="life" aria-pressed="false">생활 직업 8</button></div></div>
+    <div class="dex" id="dexl"></div>
+  </section>
+
+  <section class="sec" id="recommend">
+    <div class="sh"><div><h2>직업 추천</h2><p>원하는 플레이에 맞춰 골랐어요. 공식 소개의 역할 기준이며 출시 후 밸런스는 달라질 수 있어요.</p></div><a class="btn sec sm" href="/recommend/">파티 조합까지 보기 ›</a></div>
+    <div class="tbl"><table>
+      <thead><tr><th>이런 분께</th><th>추천</th><th>이유</th></tr></thead>
+      <tbody>
+        <tr><td>혼자서 강하게</td><td><span class="pick">검객</span></td><td>기절과 강한 일격, 1대1에서 가장 강한 직업</td></tr>
+        <tr><td>파티의 방패</td><td><span class="pick">검사</span></td><td>높은 방어력과 보호막으로 동료를 지키는 탱커</td></tr>
+        <tr><td>힐러 · 서포터</td><td><span class="pick">악사</span></td><td>하프로 회복하고 파티 전체를 강화</td></tr>
+        <tr><td>멀리서 안전하게</td><td><span class="pick">궁사</span></td><td>원거리 활 공격, 속박과 출혈로 소모전</td></tr>
+        <tr><td>빠르고 시원하게</td><td><span class="pick">무도가</span></td><td>빠른 연타와 광역 공격으로 몰아치는 사냥</td></tr>
+        <tr><td>한 방 치명타</td><td><span class="pick">자객</span></td><td>은신으로 접근해 단검 치명타, 중독·침묵</td></tr>
+        <tr><td>적을 묶어두기</td><td><span class="pick">투사</span></td><td>긴 사거리 창으로 속박, 필살기 '심판의 창'</td></tr>
+        <tr><td>싸움보다 생활</td><td><span class="pick">자연인 · 광부</span></td><td>낚시와 채광으로 재료를 모아 요리·제작으로 연결</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="sec" id="content">
+    <div class="sh"><div><h2>콘텐츠</h2><p>원작에 없던 협동 콘텐츠와 모바일 편의 기능이 더해졌어요.</p></div></div>
+    <div class="dex" id="cont"></div>
+  </section>
+
+  <section class="sec" id="gallery">
+    <div class="sh"><div><h2>게임 화면</h2><p>공식 사전예약 페이지에 공개된 개발 중 화면이에요.</p></div></div>
+    <div class="gal">
+      <figure><img src="/img/gallery/classic.webp" alt="성 앞에 모인 일랜시아 캐릭터들" loading="lazy"><figcaption>다시 만나는 그 시절<span>원작 도트 그래픽과 마을 그대로</span></figcaption></figure>
+      <figure><img src="/img/gallery/boss.webp" alt="얼음 동굴의 거대한 보스" loading="lazy"><figcaption>새로운 보스<span>모바일판에서 새로 만나는 보스</span></figcaption></figure>
+      <figure><img src="/img/gallery/jobs.webp" alt="직업 선택 화면" loading="lazy"><figcaption>직업 선택<span>평민에서 원하는 직업으로</span></figcaption></figure>
+      <figure><img src="/img/gallery/fishing.webp" alt="물가에서 낚시하는 모험가들" loading="lazy"><figcaption>느긋한 생활<span>낚시, 채집, 요리로 보내는 하루</span></figcaption></figure>
+      <figure><img src="/img/gallery/gear.webp" alt="장비 창과 대장간" loading="lazy"><figcaption>장비 맞추기<span>아이템 하나에 울고 웃던 감성</span></figcaption></figure>
+      <figure><img src="/img/gallery/lorencia.webp" alt="로랜시아 광장 우물가의 모험가들" loading="lazy"><figcaption>로랜시아 광장<span>사전예약 미니게임에서 미리 걷기</span></figcaption></figure>
+    </div>
+    <p class="credit">게임 이미지 © NEXON Korea Corp. &amp; GAMEDUO Inc. · 권리자 요청 시 즉시 삭제합니다.</p>
+  </section>
+
+  <section class="sec" id="guide">
+    <div class="sh"><div><h2>첫날 가이드</h2><p>출시 전날부터 첫 접속까지 순서대로.</p></div></div>
+    <ol class="steps">
+      <li><b>사전예약 · 미니게임</b><p>구글 플레이나 앱스토어에서 사전예약하고, 미니게임 '로랜시아 살펴보기'로 마을을 미리 둘러보세요.</p></li>
+      <li><b>11월 27일 사전 다운로드 · 닉네임 선점</b><p>지금 진행 중이에요. 사전 생성은 모바일에서만 되고 닉네임은 선착순이에요. <a href="/precreate/" style="color:var(--sky)">사전 생성 방법 보기 ›</a></p></li>
+      <li><b>캐릭터 사전 생성</b><p>27일부터 캐릭터를 미리 만들 수 있어요. 원하는 이름은 이때 선점하세요.</p></li>
+      <li><b>12월 1일 오전 11시 오픈</b><p>안드로이드, iOS, PC 런처가 동시에 열려요. 접속 대기열이 생길 수 있어요.</p></li>
+      <li><b>우편함 먼저</b><p>비눗방울 탈것, 꽃무늬 의상, 초반 성장 도움 세트, 미끼 100개를 챙기세요.</p></li>
+      <li><b>직업 정하기</b><p>위 추천표로 전투 직업을, 계산기로 키울 생활 직업 목표를 정해 두세요.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec" id="compare">
+    <div class="sh"><div><h2>원작과 무엇이 달라졌나</h2><p>공개된 정보만 비교했어요.</p></div></div>
+    <div class="tbl"><table>
+      <thead><tr><th>항목</th><th>원작 (1999, PC)</th><th>일랜시아 모바일</th></tr></thead>
+      <tbody>
+        <tr><td>그래픽</td><td>2D 도트</td><td class="hi">원작 도트 그래픽 유지</td></tr>
+        <tr><td>마을·사냥터</td><td>로랜시아, 에필로리아 등</td><td class="hi">원작 지역 구현</td></tr>
+        <tr><td>직업</td><td>전직해도 플레이 차이가 크지 않음</td><td class="hi">전투 7종, 직업별 고유 콘셉트</td></tr>
+        <tr><td>스킬</td><td>어빌리티 수련 중심</td><td class="hi">스킬북으로 배우는 직업 전용 스킬</td></tr>
+        <tr><td>생활</td><td>낚시, 채광, 요리, 제작</td><td class="hi">생활 직업 8종</td></tr>
+        <tr><td>협동</td><td>자유로운 파티 사냥</td><td class="hi">파티 던전(1~10단계), 길드 던전(5단계), 필드 보스 3종</td></tr>
+        <tr><td>편의</td><td>PC 키보드·마우스</td><td class="hi">AI 모드(종료 후 최대 24시간 자동 사냥), 절전 모드</td></tr>
+        <tr><td>개발·운영</td><td>넥슨</td><td class="hi">게임듀오 (넥슨이 원작 리소스 제공)</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="sec" id="video">
+    <div class="sh"><div><h2>공략 영상</h2><p>일랜시아 유튜버들의 영상이에요. 누르면 바로 재생돼요.</p></div>
+      <div class="seg" role="group" aria-label="영상 묶음"><button type="button" data-vtab="mine" aria-pressed="false">추천 영상</button><button type="button" data-vtab="mobile" aria-pressed="true">모바일</button><button type="button" data-vtab="classic" aria-pressed="false">원작</button></div></div>
+    <div class="vid" id="vid"></div>
+    <div class="crs" id="crs"></div>
+  </section>
+
+  <section class="sec" id="news">
+    <div class="sh"><div><h2>소식</h2><p>기사와 공식 발표에서 확인된 내용만 모았어요.</p></div></div>
+    <div class="news">
+      <article><span class="tag g">11.27 속보</span><h3><a href="/precreate/">캐릭터 사전 생성 시작 · 사전예약 30만 돌파</a></h3><p>27일 0시부터 모바일에서 서버를 고르고 캐릭터를 미리 만들 수 있어요. 닉네임은 선착순이에요.</p></article>
+      <article><span class="tag g">편의</span><h3>AI 모드 · 절전 모드</h3><p>게임을 꺼도 최대 24시간 자동 사냥이 이어져요. 직업별 전용 스킬은 스킬북으로 배워요.</p></article>
+      <article><span class="tag g">협동</span><h3>새 협동 콘텐츠</h3><p>파티 던전(1~10단계), 길드 던전(5단계), 필드 보스 3종이 새로 생겼어요.</p></article>
+      <article><span class="tag">프로젝트</span><h3>넥슨 리플레이 첫 작품</h3><p>넥슨이 원작 그래픽 등 핵심 자산을 주고 게임듀오가 개발·운영을 맡아요. 에버플래닛, 택티컬 커맨더스, 어둠의전설도 같은 프로젝트예요.</p></article>
+      <article><span class="tag">PC</span><h3>'프로젝트 ER'도 개발 중</h3><p>'일랜시아 리마스터'로 알려졌던 별도 PC 프로젝트로, 새 콘텐츠를 더해 스팀 테스트를 예고했어요.</p></article>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="sh"><div><h2>자주 묻는 질문</h2></div></div>
+    <div class="faq">
+      <details open><summary>일랜시아 모바일 출시일은 언제인가요?</summary><p>2026년 12월 1일 오전 11시예요. 11월 27일부터 사전 다운로드와 캐릭터 사전 생성을 할 수 있어요.</p></details>
+      <details><summary>일랜시아M과 같은 게임인가요?</summary><p>네. '일랜시아M'이라고 부르는 게임이 게임듀오의 '일랜시아 모바일'이에요.</p></details>
+      <details><summary>PC로도 할 수 있나요?</summary><p>네. 안드로이드, iOS와 함께 PC 런처를 지원해요.</p></details>
+      <details><summary>사전예약을 안 했는데 보상을 받나요?</summary><p>공식 안내에 따르면 출시 후 모든 신규 모험가에게 계정당 1회 우편으로 지급돼요. 비눗방울 탈것, 꽃무늬 의상, 성장 도움 세트, 미끼 100개예요.</p></details>
+      <details><summary>어떤 직업이 있나요?</summary><p>전투 직업 7종(무도가, 투사, 검객, 자객, 궁사, 검사, 악사)과 생활 직업 8종(자연인, 광부, 미용사, 대장장이, 재단사, 목공사, 세공사, 연금술사)이에요.</p></details>
+      <details><summary>자동 사냥이 되나요?</summary><p>AI 모드로 게임을 꺼도 최대 24시간 자동 사냥이 이어지고, 절전 모드도 있어요.</p></details>
+      <details><summary>원작 PC 일랜시아와 뭐가 다른가요?</summary><p>도트 그래픽과 마을은 그대로이고, 직업별 전용 스킬, 파티·길드 던전, 필드 보스, AI 모드가 새로 들어갔어요.</p></details>
+    </div>
+  </section>
+</main>
+
+<aside class="side" aria-label="빠른 정보">
+  <div class="panel"><div class="ph"><h3>출시 일정</h3><span class="tag j" id="tlnow"></span></div><div class="pb"><ol class="tl" id="rd"></ol></div></div>
+  <div class="panel" id="coupon"><div class="ph"><h3>쿠폰</h3><span class="tag">공식 확인만</span></div><div class="pb" id="cpl"></div></div>
+  <div class="panel" id="rewards"><div class="ph"><h3>사전예약 보상</h3><span class="tag g">계정당 1회</span></div><div class="pb"><div class="rw" id="rw"></div><p class="mini" style="margin-top:10px">사전예약 여부와 관계없이 신규 모험가 모두 우편으로 받아요.</p></div></div>
+  <div class="panel" id="calc"><div class="ph"><h3>생활 직업 목표 계산기</h3></div><div class="pb">
+    <div class="calc">
+      <label for="cA">직업<select id="cA"></select></label>
+      <label for="cG">하루 상승량<input type="number" id="cG" min="0" step="0.1" value="5"></label>
+      <label for="cN">현재<input type="number" id="cN" min="0" value="0"></label>
+      <label for="cT">목표<input type="number" id="cT" min="1" value="100"></label>
+    </div>
+    <div class="out" aria-live="polite"><b id="cOut">20일</b><span id="cSub"></span></div>
+    <p class="mini">값은 이 브라우저에만 저장돼요.</p>
+  </div></div>
+  <div class="panel" id="todo"><div class="ph"><h3>오늘의 숙제</h3><button class="lb" id="tr" type="button">기본 목록</button></div><div class="pb">
+    <ul class="todo" id="tl"></ul>
+    <form class="add" id="tf"><input type="text" id="ti" placeholder="할 일 추가" aria-label="할 일 추가" maxlength="40"><button class="btn sec sm" type="submit">추가</button></form>
+    <div class="prog"><i id="tp"></i></div><div class="mini"><span id="tc"></span><span>매일 자동 초기화</span></div>
+  </div></div>
+  <div class="panel"><div class="ph"><h3>공식 링크</h3></div><div class="pb links" id="chs"></div></div>
+  <div class="panel fb" id="feedback"><div class="ph"><h3>제보 · 피드백</h3></div><div class="pb">
+    <form id="fb"><label for="fbt" class="mini" style="display:block;margin:0 0 6px">틀린 정보, 새 쿠폰, 원하는 기능을 적어 주세요</label><textarea id="fbt" maxlength="1000"></textarea>
+    <div class="row"><span id="fbm"></span><button class="btn sec sm" type="submit">복사하기</button></div></form>
+  </div></div>
+  <div class="ad" data-slot="side">광고</div>
+</aside>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>일랜시아노트 · 일랜시아 모바일 비공식 가이드</h4>
+      <p style="margin:0 0 8px">이 사이트는 비공식 팬 사이트로 넥슨코리아, 게임듀오와 관련이 없어요. 게임 이름·이미지의 권리는 각 권리자에게 있으며 요청 시 즉시 삭제합니다. 게임 정보는 업데이트로 달라질 수 있고 계산기 결과는 참고용이에요.</p>
+      <p style="margin:0">문의 <span id="mail"></span> · 마지막 확인 2026년 11월 26일 · © 2026 일랜시아노트</p>
+      <ul id="log" style="margin-top:14px"></ul>
+    </div>
+    <div>
+      <h4>바로가기</h4>
+      <ul><li><a href="#dex">직업 도감</a></li><li><a href="#recommend">직업 추천</a></li><li><a href="#guide">첫날 가이드</a></li><li><a href="#coupon">쿠폰</a></li><li><a href="#video">공략 영상</a></li><li><a href="#faq">자주 묻는 질문</a></li></ul>
+    </div>
+    <div>
+      <h4>정책</h4>
+      <ul>
+        <li><details id="about"><summary>소개</summary><p>일랜시아 모바일을 즐기는 모험가를 위한 비공식 정보·도구 모음이에요. 공식 채널에서 확인된 정보만 정리해요.</p></details></li>
+        <li><details id="privacy"><summary>개인정보처리방침</summary><p>회원가입이 없고 개인정보를 모으지 않아요. 도구에 적은 내용은 방문자 브라우저(localStorage)에만 남아요. 방문 통계를 위해 익명 분석 도구를 쓸 수 있어요.</p></details></li>
+        <li><details id="ads"><summary>광고 · 쿠키 안내</summary><p>Google 애드센스 등 제3자 광고가 실릴 수 있고, 광고 업체는 쿠키로 관심사 기반 광고를 보여줄 수 있어요. Google 광고 설정에서 맞춤 광고를 끌 수 있어요.</p></details></li>
+        <li><details id="terms"><summary>이용약관</summary><p>사이트 정보는 참고용이며 정보 이용으로 생긴 손해는 책임지지 않아요. 내용 무단 복제를 삼가 주세요.</p></details></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="dlg" id="dlg" role="dialog" aria-modal="true" aria-label="검색"><div class="in"><input type="search" id="q" placeholder="직업, 쿠폰, 출시일, 보상…" aria-label="검색어"><ul class="res" id="res"></ul></div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+{
+/* ===== 운영자 설정 ===== */
+const CFG = { email:"", donate:"", discord:"", openchat:"", adsense:"" };
+const COUPONS = [];   /* [코드, 보상, 기한] — 공식 확인된 것만 */
+const VIDEOS = [      /* [유튜브 ID, 제목, 채널, 묶음(mine/mobile/classic)] */
+  ["MfEE0mzAIS0","[NEXON REPLAY] 첫 출시작 일랜시아 모바일 사전예약","공식 영상","mobile"],
+  ["Ri-xRuk7gts","솔직히 기대 반 걱정 반이라 미리 들어가 봤습니다","소니쇼","mobile"],
+  ["uMPKh152pRY","일랜시아 모바일 사전예약 시작! 출시일·보상·직업 총정리","","mobile"],
+  ["0ip7w-buxv4","드디어 일랜시아 모바일이 나옵니다 (출시일&정보 정리)","부부오락관","mobile"],
+  ["e8n140BRPvA","일랜시아 모바일 출시 탐방 (쇼츠)","","mobile"],
+  ["dL_541EJAks","모험가 2차직업 자연인 & 탐색가 달기","부부오락관","classic"],
+  ["iXP9Fv3oIWs","일랜시아 찍먹 플레이 1편","부부오락관","classic"],
+  ["oYjs-fDRbXw","핵과 매크로가 기본이라던 이 게임 해봤습니다 『일랜시아 #1』","배돈","classic"],
+  ["pMWrgq-AG2Q","세기말게임 일랜시아에서 손사냥으로 만렙 찍기","","classic"],
+  ["Vp-zsptRnLU","순정유저 성장일기 100일차 순수기사 달성!","","classic"],
+  ["cb4ptTKLxkA","일랜시아 미용 / 지침서 바꾸기로 원하던 머리를 해보자","딩동","classic"],
+  ["rq3zXnZXkpA","공식 창모드 지원을 시작한 일랜시아 근황","","classic"],
+  ["j0jza3IqZzE","[일랜시아] 유튜브 최초!? 미용사 체험하기","","classic"],
+  ["OSaX0NVZQr8","[메피 1화] 무자본·무과금 육성일지 1일차","","classic"]
+];
+const CREATORS = [
+  ["부부오락관","플레이 · 모바일 소식","https://www.youtube.com/watch?v=0ip7w-buxv4"],
+  ["소니쇼","모바일 미리 플레이","https://www.youtube.com/watch?v=Ri-xRuk7gts"],
+  ["부작골TV","일랜시아 추억 에피소드","https://www.youtube.com/channel/UCqXCtWD3NjkbOL9QUVSrvfA"],
+  ["뗑컨이","공략 & 플레이 재생목록","https://www.youtube.com/playlist?list=PLDC2cJnZY_6JW5tQqkeJlg2CrrQEAsqpm"],
+  ["순정 일랜시아","프로그램 없이 하는 플레이","https://youtube.com/playlist?list=PLKDxYgqfCHNMv9eUxjd5EV2FWNxv5091-"],
+  ["원작 플레이 모음","넥슨 일랜시아 재생목록","https://www.youtube.com/playlist?list=PLUcReXzE56upfFzk1LeCbkE3_vI1rr5ql"]
+];
+/* ====================== */
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = {get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const IMGMAP = window.__IMG || {};
+const src = p => IMGMAP[p] || p;
+const toast = t => { const el = $("toast"); el.textContent = t; el.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => el.classList.remove("on"), 1800); };
+const copy = async (t, ok) => { try { await navigator.clipboard.writeText(t); toast(ok); } catch(e) { toast("복사가 막혔어요. 길게 눌러 직접 복사하세요"); } };
+const R = (x,y,w,h,f) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${f}"/>`;
+const ico = cells => `<svg viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true">${cells.map(([x,y,w,h,f]) => R(x,y,w,h,f)).join("")}</svg>`;
+const ICO = {clock:[[1,1,6,6,"#d9b15f"],[2,2,4,4,"#171a20"],[4,2,1,2,"#eceef2"],[4,4,2,1,"#eceef2"]], box:[[1,2,6,5,"#a0683a"],[1,2,6,1,"#7a4a22"],[3,1,2,2,"#d9b15f"]]};
+const imgOr = (path, alt, fb) => `<img src="${src(path)}" alt="${esc(alt)}" loading="lazy" onerror="this.outerHTML=this.dataset.fb" data-fb='${fb}'>`;
+
+/* hero background */
+$("herobg").style.backgroundImage = `url("${src("/img/hero.jpg")}")`;
+
+/* bookmark */
+if (store.get("el_bm", false)) $("bmbar").hidden = true;
+if (/Mac|iPhone|iPad/.test(navigator.platform||"")) $("bmkey").textContent = "⌘ + D";
+$("bmx").addEventListener("click", () => { $("bmbar").hidden = true; store.set("el_bm", true); });
+
+/* countdown */
+const LAUNCH = Date.parse("2026-12-01T11:00:00+09:00"), PRE = Date.parse("2026-11-27T00:00:00+09:00");
+const tick = () => {
+  const now = Date.now(), t = Math.max(0, LAUNCH - now);
+  $("d").textContent = Math.floor(t/864e5); $("h").textContent = String(Math.floor(t/36e5)%24).padStart(2,"0");
+  $("m").textContent = String(Math.floor(t/6e4)%60).padStart(2,"0"); $("s").textContent = String(Math.floor(t/1e3)%60).padStart(2,"0");
+  $("cdlabel").textContent = t === 0 ? "지금 서비스 중" : "정식 출시까지";
+  $("pre").textContent = t === 0 ? "모험을 시작하세요" : now >= PRE ? "사전 다운로드 · 캐릭터 사전 생성 진행 중" : "11월 27일(금)부터 사전 다운로드 · 캐릭터 사전 생성";
+};
+tick(); setInterval(tick, 1000);
+
+/* job dex */
+const DEX = {
+  fight: [["monk","무도가","근거리","양손 글러브 연타와 빠른 이동, 연속·광역 공격"],["fighter","투사","근·중거리","긴 사거리 양손 창으로 속박, 필살기 '심판의 창'"],["swordmaster","검객","근거리","양손도로 기절시키고 일격, 1대1에 가장 강함"],["assassin","자객","암살","은신으로 접근해 단검 치명타, 중독·침묵"],["archer","궁사","원거리","멀리서 활로 공격, 속박과 출혈로 소모전"],["swordsman","검사","탱커","한손검과 높은 방어력, 보호막으로 파티 보호"],["bard","악사","지원","하프로 회복과 파티 강화, 중거리 공격"]],
+  life: [["angler","자연인","낚시","낚은 물고기는 요리 재료가 돼요"],["miner","광부","채광","구리·철·금 광맥, 깊은 층일수록 금광맥"],["stylist","미용사","미용","모험가의 머리 모양을 바꿔 줘요"],["blacksmith","대장장이","제작","쇠를 두드려 무기를 만들어요"],["tailor","재단사","제작","실을 잣고 옷과 방어구를 지어요"],["carpenter","목공사","가공","목재를 가공목으로, 목재 가공품 제작"],["jeweler","세공사","가공","원석에서 보석을 찾아 반지·목걸이 제작"],["alchemist","연금술사","제작","재료를 섞어 포션을 빚고 더 크게 키워요"]]
+};
+let tab = "fight";
+const card = (path,name,role,desc,play,href) => `<article class="job" tabindex="0">${href ? `<a href="${href}">` : ""}<div class="im">${imgOr(path,name,ico(ICO.box))}${play ? `<img class="play" src="${src(play)}" alt="${esc(name)} 플레이 화면" loading="lazy" onerror="this.remove()"><span class="hint">플레이 화면 ▸</span>` : ""}<span class="tag">${esc(role)}</span></div><div class="tx"><b>${esc(name)}</b><span>${esc(desc)}</span></div>${href ? "</a>" : ""}</article>`;
+const drawDex = () => { $("dexl").innerHTML = DEX[tab].map(([k,n,r,d]) => tab === "fight" ? card(`/img/portrait/${k}.webp`,n,r,d,`/img/class/${k}.webp`,`/jobs/${k}/`) : card(`/img/class/${k}.webp`,n,r,d,null,`/jobs/${k}/`)).join(""); document.querySelectorAll("[data-tab]").forEach(b => b.setAttribute("aria-pressed", b.dataset.tab === tab)); };
+document.querySelectorAll("[data-tab]").forEach(b => b.addEventListener("click", () => { tab = b.dataset.tab; drawDex(); }));
+drawDex();
+
+/* content */
+const CONT = [["field-boss","필드 보스","협동","필드에서 여럿이 함께 잡는 보스 3종"],["party","파티 던전","파티","난이도 1~10단계, 클리어 보상은 우편으로"],["guild-dungeon","길드 던전","길드","5단계, 방을 비우면 문이 열리고 보상 상자"],["guild","길드","길드","출석, 연구, 보관함, 길드 상점"],["merchant","방랑 상인","매일","세계 곳곳에 나타나고 물건이 매일 바뀌어요"],["quest","특별 퀘스트","이야기","NPC 이야기와 숨은 단서, 특별한 보상"],["ai","AI 모드 · 절전","편의","게임을 꺼도 최대 24시간 자동 사냥"]];
+$("cont").innerHTML = CONT.map(([k,n,r,d]) => k === "ai" ? `<article class="job"><div class="im">${ico(ICO.clock)}<span class="tag">${r}</span></div><div class="tx"><b>${n}</b><span>${d}</span></div></article>` : card(`/img/content/${k}.webp`,n,r,d)).join("");
+
+/* timeline */
+const RD = [["1999","1999-12-31","원작 서비스 시작","넥슨 초창기 MMORPG"],["2026.05","2026-05-31","넥슨 리플레이 공개","클래식 IP 5종 개방"],["10.22","2026-10-22","사전예약 시작","홈페이지 · 앱 마켓"],["11.27","2026-11-27T00:00:00+09:00","사전 다운로드","캐릭터 사전 생성"],["12.01","2026-12-01T11:00:00+09:00","정식 출시","오전 11시 · 모바일 · PC"]];
+const now = Date.now(); let nx = null;
+$("rd").innerHTML = RD.map(([t,iso,b,s]) => { const past = Date.parse(iso) <= now; let c = past ? "past" : ""; if (!past && nx === null) { c = "now"; nx = b; } return `<li class="${c}"><time>${t}</time><i></i><div><b>${b}</b><span>${s}</span></div></li>`; }).join("");
+$("tlnow").textContent = nx ? `다음: ${nx}` : "서비스 중";
+
+/* coupons */
+$("cpl").innerHTML = COUPONS.length ? COUPONS.map(([c,r,d]) => `<div class="cp"><div><b>${esc(c)}</b><div class="mini" style="margin:0">${esc(r)} · ${esc(d)}</div></div><button class="btn sec sm" type="button" data-cp="${esc(c)}">복사</button></div>`).join("") : `<div class="empty">아직 공식 확인된 쿠폰이 없어요.<br>출시 후 공개되면 바로 올릴게요.</div>`;
+$("cpl").addEventListener("click", e => { const c = e.target.dataset.cp; if (c) copy(c, `${c} 복사했어요`); });
+
+/* rewards */
+const RW = [["bubble","탈것 '비눗방울'","사전예약 한정"],["flower","꽃무늬 의상 세트","상의 + 반바지"],["starter","초반 성장 도움 세트","물약 · 도구"],["bait","미끼 100개","낚시 바로 시작"]];
+$("rw").innerHTML = RW.map(([k,n,d]) => `<div><div class="im">${imgOr(`/img/reward/${k}.webp`,n,ico(ICO.box))}</div><p>${n}<span>${d}</span></p></div>`).join("");
+
+/* calculator */
+const ABS = ["자연인","광부","대장장이","재단사","목공사","세공사","연금술사"];
+let ab = store.get("el_ab2", {}); ABS.forEach(a => { if (!ab[a]) ab[a] = {now:0,goal:100}; });
+$("cA").innerHTML = ABS.map(a => `<option>${a}</option>`).join("");
+const fill = () => { const v = ab[$("cA").value]; $("cN").value = v.now; $("cT").value = v.goal; calc(); };
+const calc = () => {
+  const a = $("cA").value, n = Number($("cN").value)||0, t = Number($("cT").value)||0, g = Number($("cG").value)||0, left = Math.max(0, t-n);
+  ab[a] = {now:n, goal:t}; store.set("el_ab2", ab);
+  if (left === 0) { $("cOut").textContent = "달성"; $("cSub").textContent = "목표를 넘었어요"; return; }
+  if (g <= 0) { $("cOut").textContent = "—"; $("cSub").textContent = "하루 상승량을 적어 주세요"; return; }
+  const days = Math.ceil(left/g), d = new Date(Date.now()+days*864e5);
+  $("cOut").textContent = `${days}일`; $("cSub").textContent = `${left} 남음\n${d.getMonth()+1}월 ${d.getDate()}일쯤 달성`;
+};
+$("cA").addEventListener("change", fill); ["cN","cT","cG"].forEach(id => $(id).addEventListener("input", calc)); fill();
+
+/* todo */
+const DEF = ["우편함 확인","길드 출석","방랑 상인 물건 확인","파티 던전 도전","낚시 미끼 채우기","광석 캐기"];
+const today = new Date().toLocaleDateString("ko-KR",{timeZone:"Asia/Seoul"});
+let td = store.get("el_todo", null) || {items:DEF.map(t => ({t,d:false})), day:today};
+if (td.day !== today) { td.items.forEach(i => i.d = false); td.day = today; }
+const drawTd = () => {
+  $("tl").innerHTML = td.items.length ? td.items.map((it,i) => `<li class="${it.d?"done":""}"><input type="checkbox" id="t${i}" data-i="${i}" ${it.d?"checked":""}><label for="t${i}">${esc(it.t)}</label><button class="x" type="button" data-del="${i}" aria-label="${esc(it.t)} 삭제">×</button></li>`).join("") : `<li><span class="mini">할 일을 추가해 보세요</span></li>`;
+  const done = td.items.filter(i => i.d).length;
+  $("tc").textContent = `${done} / ${td.items.length} 완료`; $("tp").style.width = td.items.length ? `${done/td.items.length*100}%` : "0";
+  store.set("el_todo", td);
+};
+$("tl").addEventListener("change", e => { const i = e.target.dataset.i; if (i==null) return; td.items[i].d = e.target.checked; drawTd(); });
+$("tl").addEventListener("click", e => { const i = e.target.dataset.del; if (i==null) return; td.items.splice(i,1); drawTd(); });
+$("tf").addEventListener("submit", e => { e.preventDefault(); const v = $("ti").value.trim(); if (!v) return; td.items.push({t:v,d:false}); $("ti").value=""; drawTd(); });
+$("tr").addEventListener("click", () => { td = {items:DEF.map(t => ({t,d:false})), day:today}; drawTd(); });
+drawTd();
+
+/* videos */
+let vtab = VIDEOS.some(v => v[3] === "mine") ? "mine" : "mobile";
+const drawVid = () => {
+  $("vid").innerHTML = VIDEOS.filter(v => v[3] === vtab).map(([id,t,ch]) => `<div class="vc"><button class="vplay" type="button" data-id="${esc(id)}" aria-label="${esc(t)} 재생" style="background-image:linear-gradient(135deg,#1c2028,#0f1216)"><img alt="" loading="lazy" src="https://i.ytimg.com/vi/${encodeURIComponent(id)}/hqdefault.jpg" onload="this.parentNode.dataset.ok=1" onerror="this.remove()"><i></i></button><div class="tx"><b>${esc(t)}</b><span>${ch ? esc(ch) + " · " : ""}<a href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">유튜브에서 보기</a></span></div></div>`).join("");
+  document.querySelectorAll("[data-vtab]").forEach(b => { b.setAttribute("aria-pressed", b.dataset.vtab === vtab); b.hidden = !VIDEOS.some(v => v[3] === b.dataset.vtab); });
+};
+document.querySelectorAll("[data-vtab]").forEach(b => b.addEventListener("click", () => { vtab = b.dataset.vtab; drawVid(); }));
+$("vid").addEventListener("click", e => { const b = e.target.closest(".vplay"); if (!b) return; const id = b.dataset.id;
+  if (!b.dataset.ok) { window.open(`https://www.youtube.com/watch?v=${encodeURIComponent(id)}`, "_blank", "noopener"); return; }
+  const f = document.createElement("iframe"); f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1`; f.title = "유튜브 영상"; f.allow = "autoplay; encrypted-media; picture-in-picture"; f.allowFullscreen = true; f.className = "vframe"; b.replaceWith(f); });
+drawVid();
+$("crs").innerHTML = CREATORS.map(([b,s,u]) => `<a href="${esc(u)}" target="_blank" rel="noopener"><i>${esc(b.slice(0,1))}</i><span><b>${esc(b)}</b><span>${esc(s)}</span></span></a>`).join("");
+
+/* official links */
+const CH = [["공식 사전예약 페이지","play.gameduo.net","https://play.gameduo.net/el"],["구글 플레이","Android 사전예약","https://gameduo.sng.link/Ddf1ti/k2o45"],["앱스토어","iOS 사전예약","https://gameduo.sng.link/Ddf1ti/088wt?_smtype=3"],["카카오톡 채널","출시 알림 받기","https://pf.kakao.com/_rxaFxiX/friend"],["미니게임 '로랜시아 살펴보기'","캐릭터 만들고 마을 걷기","https://lorencia.play.gameduo.net/"],["디스코드","모험가 커뮤니티",CFG.discord],["오픈채팅","정보 공유",CFG.openchat],["커피 후원","사이트 운영 응원",CFG.donate]];
+$("chs").innerHTML = CH.filter(c => c[2]).map(([b,s,u]) => `<a href="${esc(u)}" target="_blank" rel="noopener"><b>${b}</b><span>${s} ↗</span></a>`).join("");
+
+/* feedback */
+$("fb").addEventListener("submit", e => { e.preventDefault(); const v = $("fbt").value.trim(); if (!v) { $("fbm").textContent = "내용을 적어 주세요"; return; } copy(`[일랜시아노트 제보]\n${v}`, "복사했어요. 문의 메일로 보내 주세요"); $("fbm").textContent = CFG.email ? `보낼 곳: ${CFG.email}` : ""; });
+$("mail").textContent = CFG.email || "준비 중";
+
+/* update log */
+const LOG = [["11.27","캐릭터 사전 생성 가이드, 출시 당일 정리 페이지 추가 · 사전예약 30만 돌파 소식"],["11.27","직업 15종 상세 페이지, 출시일·쿠폰·초보 가이드·추천·비교·영상·FAQ 페이지 추가"],["11.26","전투 직업 공식 초상화, 마우스 올리면 플레이 화면"],["11.26","사이트 이름을 일랜시아노트로 변경, elancianote.com 준비"],["11.26","전문 포털형 디자인으로 전면 개편, 직업 추천·FAQ 추가"],["11.26","유튜브 영상 14편, 유튜버·재생목록 6곳"],["11.26","직업·콘텐츠·보상 실제 게임 이미지, 게임 화면 갤러리"]];
+$("log").innerHTML = LOG.map(([d,t]) => `<li><span style="color:var(--sub)">${d}</span> ${esc(t)}</li>`).join("");
+
+/* adsense (own domain only) */
+if (CFG.adsense) {
+  const sc = document.createElement("script"); sc.async = true; sc.crossOrigin = "anonymous";
+  sc.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + encodeURIComponent(CFG.adsense); document.head.appendChild(sc);
+  document.querySelectorAll(".ad").forEach(el => { el.classList.add("on"); const ins = document.createElement("ins"); ins.className = "adsbygoogle"; ins.style.display = "block"; ins.dataset.adClient = CFG.adsense; ins.dataset.adFormat = "auto"; ins.dataset.fullWidthResponsive = "true"; el.appendChild(ins); try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {} });
+}
+
+/* search */
+const IDX = [["직업 도감","#dex","무도가 투사 검객 자객 궁사 검사 악사 자연인 광부 미용사 대장장이 재단사 목공사 세공사 연금술사"],["직업 추천","#recommend","추천 솔로 탱커 힐러 원거리"],["콘텐츠","#content","필드 보스 파티 던전 길드 방랑 상인 퀘스트 AI 모드"],["게임 화면","#gallery","스크린샷 이미지"],["첫날 가이드","#guide","처음 시작 사전 다운로드 캐릭터 생성"],["원작 비교","#compare","차이 원작 PC"],["공략 영상","#video","유튜브 영상 유튜버"],["소식","#news","프로젝트 ER 리마스터 넥슨 리플레이"],["자주 묻는 질문","#faq","FAQ 일랜시아M PC 보상 자동사냥"],["출시 일정","#rd","출시일 12월 1일 일정"],["쿠폰","#coupon","쿠폰 코드"],["사전예약 보상","#rewards","비눗방울 꽃무늬 미끼 보상"],["생활 직업 계산기","#calc","계산기 목표 며칠"],["오늘의 숙제","#todo","체크리스트 숙제"],["공식 링크","#chs","공식 카카오 구글 앱스토어 미니게임"],["개인정보처리방침","#privacy","개인정보 쿠키"]];
+const dlg = $("dlg"), q = $("q");
+const drawRes = () => { const v = q.value.trim().toLowerCase(); const r = IDX.filter(([t,,k]) => !v || (t+k).toLowerCase().includes(v));
+  $("res").innerHTML = r.length ? r.map(([t,h,k]) => `<li><a href="${h}">${esc(t)}<span>${esc(k.split(" ").slice(0,3).join(" · "))}</span></a></li>`).join("") : `<li class="empty" style="margin:8px">검색 결과가 없어요</li>`; };
+const open = () => { dlg.classList.add("on"); q.value = ""; drawRes(); q.focus(); };
+const close = () => dlg.classList.remove("on");
+$("sbtn").addEventListener("click", open);
+q.addEventListener("input", drawRes);
+dlg.addEventListener("click", e => { if (e.target === dlg) close(); const a = e.target.closest("a"); if (a) { close(); const d = document.querySelector(a.getAttribute("href")); if (d && d.tagName === "DETAILS") d.open = true; } });
+document.addEventListener("keydown", e => { if (e.key === "/" && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) { e.preventDefault(); open(); } if (e.key === "Escape") close(); });
+}
+</script>
+</body>
+</html>

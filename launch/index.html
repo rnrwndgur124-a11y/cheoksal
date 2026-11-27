@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1013">
+<title>일랜시아 모바일 출시 당일 정리: 오픈 시간·점검·쿠폰 실시간 | 일랜시아노트</title>
+<meta name="description" content="일랜시아 모바일 12월 1일 오전 11시 오픈. 출시 당일 서버 상태, 점검, 쿠폰, 이벤트, 공지를 실시간으로 정리하는 페이지.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://elancianote.com/launch/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="일랜시아노트">
+<meta property="og:title" content="일랜시아 모바일 출시 당일 정리: 오픈 시간·점검·쿠폰 실시간 | 일랜시아노트">
+<meta property="og:description" content="일랜시아 모바일 12월 1일 오전 11시 오픈. 출시 당일 서버 상태, 점검, 쿠폰, 이벤트, 공지를 실시간으로 정리하는 페이지.">
+<meta property="og:url" content="https://elancianote.com/launch/">
+<meta property="og:image" content="https://elancianote.com/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+.crumb{font-size:13px;color:var(--dim);margin:0 0 10px}.crumb a{color:var(--sub)}.crumb a:hover{color:var(--ink)}
+.phero{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#121519,var(--bg))}
+.phero .wrap{padding-top:36px;padding-bottom:30px}
+.phero h1{font-size:clamp(28px,3.6vw,40px);font-weight:800;margin:0 0 10px}
+.phero p.sub{color:var(--sub);font-size:16.5px;margin:0;max-width:42em}
+.art{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:32px;padding-top:28px;padding-bottom:64px;align-items:start}
+.art main h2{font-size:21px;font-weight:800;margin:30px 0 12px}
+.art main h2:first-child{margin-top:0}
+.art main p{color:#d3d8e0;margin:0 0 12px}
+.art main ul{margin:0 0 12px;padding-left:20px;color:#d3d8e0}
+.art main li{margin:4px 0}
+.jobhead{display:grid;grid-template-columns:220px minmax(0,1fr);gap:22px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:8px}
+.jobhead img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;background:#0f1216}
+.jobhead dl{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:8px 12px;margin:0;font-size:15px}
+.jobhead dt{color:var(--dim)}.jobhead dd{margin:0;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.shot{border-radius:12px;overflow:hidden;border:1px solid var(--line);margin:6px 0 14px}
+.shot img{width:100%;max-height:420px;object-fit:cover}
+.note2{font-size:13.5px;color:var(--dim);background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:16px 0}
+.mini-dex{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px}
+.mini-dex a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;text-align:center;font-size:13px;font-weight:600;padding-bottom:6px}
+.mini-dex a:hover{border-color:var(--gold2)}
+.mini-dex a.on{border-color:var(--gold)}
+.mini-dex img{width:100%;aspect-ratio:1/1;object-fit:cover;margin-bottom:5px}
+.side2{position:sticky;top:76px;display:grid;gap:14px}
+.cta-box{background:linear-gradient(135deg,rgb(217 177 95/.16),rgb(217 177 95/.04));border:1px solid rgb(217 177 95/.35);border-radius:14px;padding:16px}
+.cta-box b{display:block;font-size:16px;margin-bottom:4px}.cta-box p{margin:0 0 12px;font-size:13.5px;color:var(--sub)}
+.pnav{display:flex;justify-content:space-between;gap:10px;margin-top:28px;flex-wrap:wrap}
+.pnav a{flex:1;min-width:180px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px}
+.pnav a span{display:block;font-size:12px;color:var(--dim)}
+.pnav a:hover{border-color:var(--line2)}
+.grid2c{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.box b{display:block;margin-bottom:4px}.box p{margin:0;font-size:14px;color:var(--sub)}
+.navlinks a.cur{color:var(--ink);background:var(--card)}
+@media(max-width:860px){.hd{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:6px;gap:8px 16px}.hd .navlinks,.hd .nav{display:flex!important;order:3;flex-basis:100%;margin:0 -8px}.hd .nav a{padding:6px 10px;font-size:14px;flex:none}}@media(max-width:1000px){.art{grid-template-columns:minmax(0,1fr)}.side2{position:static}}
+@media(max-width:600px){.jobhead{grid-template-columns:minmax(0,1fr)}.jobhead img{max-width:260px}.grid2c{grid-template-columns:minmax(0,1fr)}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://elancianote.com/"}, {"@type": "ListItem", "position": 2, "name": "출시 당일 정리", "item": "https://elancianote.com/launch/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "일랜시아 모바일 몇 시에 열리나요?", "acceptedAnswer": {"@type": "Answer", "text": "2026년 12월 1일(화) 오전 11시에 정식 출시해요."}}, {"@type": "Question", "name": "출시 당일 접속이 안 되면?", "acceptedAnswer": {"@type": "Answer", "text": "출시 직후엔 접속 대기열이나 긴급 점검이 생길 수 있어요. 공식 카카오톡 채널과 공식 페이지 공지를 확인하세요. 일랜시아노트도 확인되는 대로 이 페이지에 올려요."}}, {"@type": "Question", "name": "출시 당일 가장 먼저 할 일은?", "acceptedAnswer": {"@type": "Answer", "text": "우편함에서 사전예약 보상(비눗방울 탈것, 꽃무늬 의상 세트, 초반 성장 도움 세트, 미끼 100개)을 받는 거예요."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="/" aria-label="일랜시아노트 홈">
+      <svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 1 25 13 13 25 1 13Z" fill="#d9b15f"/><path d="M13 6 20 13 13 20 6 13Z" fill="#0e1013"/><path d="M13 9.5 16.5 13 13 16.5 9.5 13Z" fill="#d9b15f"/></svg>
+      <span><b>일랜시아노트</b><small>ELANCIA NOTE</small></span>
+    </a>
+    <nav class="nav navlinks" aria-label="주요 메뉴"><a href="/jobs/">직업 도감</a><a href="/recommend/">직업 추천</a><a href="/precreate/">사전 생성</a><a href="/release/">출시일</a><a href="/coupon/">쿠폰·보상</a><a href="/guide/">초보 가이드</a><a href="/compare/">원작 비교</a><a href="/video/">공략 영상</a><a href="/faq/">FAQ</a></nav>
+    <a class="hdcta" href="https://play.gameduo.net/el" target="_blank" rel="noopener">사전예약</a>
+  </div>
+</header>
+<section class="phero"><div class="wrap"><nav class="crumb" aria-label="현재 위치"><a href="/">홈</a> › <a href="/launch/">출시 당일 정리</a></nav><h1>일랜시아 모바일 출시 당일 정리</h1><p class="sub">12월 1일 오전 11시 오픈. 당일 공지·점검·쿠폰을 확인되는 대로 이 페이지에 올려요.</p></div></section>
+<div class="wrap art" id="main"><main>
+<h2>실시간 소식</h2>
+<div class="tbl"><table><thead><tr><th>시각</th><th>내용</th></tr></thead><tbody id="live">
+<tr><td>11.27 00:00</td><td>사전 다운로드 · <a href="/precreate/" style="color:var(--sky)">캐릭터 사전 생성</a> 시작, 사전예약 30만 돌파</td></tr>
+<tr><td>12.01 11:00</td><td>정식 출시 예정 (안드로이드 · iOS · PC 런처)</td></tr>
+</tbody></table></div>
+<div class="note2">공식 공지로 확인된 내용만 올려요. 새로고침하면 최신 내용을 볼 수 있어요.</div>
+<h2>오픈 직후 체크리스트</h2><ol class="steps">
+<li><b>우편함</b><p>사전예약 보상 4종을 받아요.</p></li>
+<li><b>쿠폰</b><p>공식 쿠폰이 나오면 <a href="/coupon/" style="color:var(--sky)">쿠폰 페이지</a>에 가장 먼저 올려요.</p></li>
+<li><b>무기 정하기</b><p>쓰는 무기의 어빌리티를 올려야 그 직업으로 전직해요. <a href="/recommend/" style="color:var(--sky)">직업 추천</a> 참고.</p></li>
+<li><b>메인 퀘스트 · 의뢰</b><p>메인 퀘스트와 매일 바뀌는 의뢰를 따라가면 성장이 빨라요.</p></li>
+<li><b>생활 직업</b><p>미끼 100개로 낚시를 바로 시작할 수 있어요.</p></li>
+</ol>
+<h2>공식 채널</h2><div class="grid2c">
+<div class="box"><b><a href="https://play.gameduo.net/el" target="_blank" rel="noopener">공식 페이지 ↗</a></b><p>공지 · 이벤트</p></div>
+<div class="box"><b><a href="https://pf.kakao.com/_rxaFxiX/friend" target="_blank" rel="noopener">카카오톡 채널 ↗</a></b><p>점검 · 쿠폰 알림</p></div></div>
+<h2>자주 묻는 질문</h2><div class="faq"><details open><summary>일랜시아 모바일 몇 시에 열리나요?</summary><p>2026년 12월 1일(화) 오전 11시에 정식 출시해요.</p></details><details><summary>출시 당일 접속이 안 되면?</summary><p>출시 직후엔 접속 대기열이나 긴급 점검이 생길 수 있어요. 공식 카카오톡 채널과 공식 페이지 공지를 확인하세요. 일랜시아노트도 확인되는 대로 이 페이지에 올려요.</p></details><details><summary>출시 당일 가장 먼저 할 일은?</summary><p>우편함에서 사전예약 보상(비눗방울 탈것, 꽃무늬 의상 세트, 초반 성장 도움 세트, 미끼 100개)을 받는 거예요.</p></details></div>
+</main><aside class="side2">
+  <div class="cta-box"><b>12월 1일 오전 11시 출시</b><p>지금 캐릭터 사전 생성 진행 중이에요. 닉네임은 선착순이에요. <a href="/precreate/" style="color:var(--sky)">방법 보기</a></p><a class="btn pri sm" href="https://play.gameduo.net/el" target="_blank" rel="noopener">공식 사전예약 ↗</a></div>
+  <div class="panel"><div class="ph"><h3>바로가기</h3></div><div class="pb links">
+    <a href="/jobs/"><b>직업 도감 15종</b><span>›</span></a>
+    <a href="/recommend/"><b>나에게 맞는 직업</b><span>›</span></a>
+    <a href="/coupon/"><b>쿠폰 · 사전예약 보상</b><span>›</span></a>
+    <a href="/guide/"><b>첫날 초보 가이드</b><span>›</span></a>
+    <a href="/#tools"><b>생활 직업 계산기 · 숙제</b><span>›</span></a>
+  </div></div>
+</aside></div><footer>
+  <div class="wrap">
+    <div><h4>일랜시아노트 · 일랜시아 모바일 비공식 가이드</h4>
+      <p style="margin:0">비공식 팬 사이트로 넥슨코리아, 게임듀오와 관련이 없어요. 게임 이름·이미지의 권리는 각 권리자에게 있으며 요청 시 즉시 삭제합니다. 게임 이미지 © NEXON Korea Corp. &amp; GAMEDUO Inc.</p></div>
+    <div><h4>바로가기</h4><ul><li><a href="/jobs/">직업 도감</a></li><li><a href="/recommend/">직업 추천</a></li><li><a href="/precreate/">사전 생성</a></li><li><a href="/release/">출시일</a></li><li><a href="/coupon/">쿠폰·보상</a></li><li><a href="/guide/">초보 가이드</a></li><li><a href="/compare/">원작 비교</a></li><li><a href="/video/">공략 영상</a></li><li><a href="/faq/">FAQ</a></li></ul></div>
+    <div><h4>정보</h4><ul><li><a href="/">홈</a></li><li><a href="/#privacy">개인정보처리방침</a></li><li><a href="/#ads">광고·쿠키 안내</a></li><li><a href="/#terms">이용약관</a></li></ul></div>
+  </div>
+</footer>
+</body>
+</html>
