@@ -27,7 +27,7 @@
 <meta property="og:url" content="https://elancianote.com/">
 <meta property="og:site_name" content="일랜시아노트">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "일랜시아노트", "alternateName": ["ELANCIA NOTE", "일랜시아 노트"], "url": "https://elancianote.com/", "inLanguage": "ko-KR"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"일랜시아 모바일 출시일은?","acceptedAnswer":{"@type":"Answer","text":"2026년 12월 1일 오전 11시. 11월 27일부터 사전 다운로드와 캐릭터 사전 생성."}},{"@type":"Question","name":"일랜시아 모바일 PC로 할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"안드로이드, iOS, PC 런처를 지원합니다."}},{"@type":"Question","name":"일랜시아 모바일 직업은?","acceptedAnswer":{"@type":"Answer","text":"전투 직업 7종(무도가, 투사, 검객, 자객, 궁사, 검사, 악사)과 생활 직업 8종(자연인, 광부, 미용사, 대장장이, 재단사, 목공사, 세공사, 연금술사)."}}]}</script>
@@ -543,7 +543,7 @@ const ICO = {clock:[[1,1,6,6,"#d9b15f"],[2,2,4,4,"#171a20"],[4,2,1,2,"#eceef2"],
 const imgOr = (path, alt, fb) => `<img src="${src(path)}" alt="${esc(alt)}" loading="lazy" onerror="this.outerHTML=this.dataset.fb" data-fb='${fb}'>`;
 
 /* hero background */
-$("herobg").style.backgroundImage = `url("${src("/img/hero.jpg")}")`;
+$("herobg").style.backgroundImage = `url("${src("/img/hero.webp")}")`;
 
 /* bookmark */
 if (store.get("el_bm", false)) $("bmbar").hidden = true;
