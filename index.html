@@ -470,8 +470,8 @@ body{padding-bottom:64px}}
   </div></div>
   <div class="panel"><div class="ph"><h3>공식 링크</h3></div><div class="pb links" id="chs"></div></div>
   <div class="panel fb" id="feedback"><div class="ph"><h3>제보 · 피드백</h3></div><div class="pb">
-    <form id="fb"><label for="fbt" class="mini" style="display:block;margin:0 0 6px">틀린 정보, 새 쿠폰, 원하는 기능을 적어 주세요</label><textarea id="fbt" maxlength="1000"></textarea>
-    <div class="row"><span id="fbm"></span><button class="btn sec sm" type="submit">복사하기</button></div></form>
+    <form id="fb"><label for="fbt" class="mini" style="display:block;margin:0 0 6px">틀린 정보, 새 쿠폰, 원하는 기능을 적어 주세요. 메일로 바로 보내져요.</label><textarea id="fbt" maxlength="1000"></textarea>
+    <div class="row"><span id="fbm"></span><button class="btn sec sm" type="submit">메일로 보내기</button></div></form>
   </div></div>
   <div class="ad" data-slot="side">광고</div>
 </aside>
@@ -482,7 +482,7 @@ body{padding-bottom:64px}}
     <div>
       <h4>일랜시아노트 · 일랜시아 모바일 비공식 가이드</h4>
       <p style="margin:0 0 8px">이 사이트는 비공식 팬 사이트로 넥슨코리아, 게임듀오와 관련이 없어요. 게임 이름·이미지의 권리는 각 권리자에게 있으며 요청 시 즉시 삭제합니다. 게임 정보는 업데이트로 달라질 수 있고 계산기 결과는 참고용이에요.</p>
-      <p style="margin:0">문의 <span id="mail"></span> · 마지막 확인 2026년 11월 26일 · © 2026 일랜시아노트</p>
+      <p style="margin:0">문의 <span id="mail"></span> · 최종 업데이트 2026.11.27 · © 2026 일랜시아노트</p>
       <ul id="log" style="margin-top:14px"></ul>
     </div>
     <div>
@@ -491,12 +491,7 @@ body{padding-bottom:64px}}
     </div>
     <div>
       <h4>정책</h4>
-      <ul>
-        <li><details id="about"><summary>소개</summary><p>일랜시아 모바일을 즐기는 모험가를 위한 비공식 정보·도구 모음이에요. 공식 채널에서 확인된 정보만 정리해요.</p></details></li>
-        <li><details id="privacy"><summary>개인정보처리방침</summary><p>회원가입이 없고 개인정보를 모으지 않아요. 도구에 적은 내용은 방문자 브라우저(localStorage)에만 남아요. 방문 통계를 위해 Google 애널리틱스(쿠키 사용)를 써요. 개인을 알아볼 수 있는 정보는 수집하지 않아요.</p></details></li>
-        <li><details id="ads"><summary>광고 · 쿠키 안내</summary><p>Google 애드센스 등 제3자 광고가 실릴 수 있고, 광고 업체는 쿠키로 관심사 기반 광고를 보여줄 수 있어요. Google 광고 설정에서 맞춤 광고를 끌 수 있어요.</p></details></li>
-        <li><details id="terms"><summary>이용약관</summary><p>사이트 정보는 참고용이며 정보 이용으로 생긴 손해는 책임지지 않아요. 내용 무단 복제를 삼가 주세요.</p></details></li>
-      </ul>
+      <ul><li><a href="/about/">사이트 소개</a></li><li><a href="/privacy/">개인정보처리방침 · 쿠키</a></li><li><a href="/terms/">이용약관</a></li><li><a href="/contact/">문의하기 · 제보</a></li></ul>
     </div>
   </div>
 </footer>
@@ -507,7 +502,7 @@ body{padding-bottom:64px}}
 <script>
 {
 /* ===== 운영자 설정 ===== */
-const CFG = { email:"", donate:"", discord:"", openchat:"", adsense:"" };
+const CFG = { email:"rnrwndgur124@naver.com", donate:"", discord:"", openchat:"", adsense:"" };
 const COUPONS = [];   /* [코드, 보상, 기한] — 공식 확인된 것만 */
 const VIDEOS = [      /* [유튜브 ID, 제목, 채널, 묶음(mine/mobile/classic)] */
   ["MfEE0mzAIS0","[NEXON REPLAY] 첫 출시작 일랜시아 모바일 사전예약","공식 영상","mobile"],
@@ -645,11 +640,11 @@ const CH = [["공식 사전예약 페이지","play.gameduo.net","https://play.ga
 $("chs").innerHTML = CH.filter(c => c[2]).map(([b,s,u]) => `<a href="${esc(u)}" target="_blank" rel="noopener"><b>${b}</b><span>${s} ↗</span></a>`).join("");
 
 /* feedback */
-$("fb").addEventListener("submit", e => { e.preventDefault(); const v = $("fbt").value.trim(); if (!v) { $("fbm").textContent = "내용을 적어 주세요"; return; } copy(`[일랜시아노트 제보]\n${v}`, "복사했어요. 문의 메일로 보내 주세요"); $("fbm").textContent = CFG.email ? `보낼 곳: ${CFG.email}` : ""; });
-$("mail").textContent = CFG.email || "준비 중";
+$("fb").addEventListener("submit", e => { e.preventDefault(); const v = $("fbt").value.trim(); if (!v) { $("fbm").textContent = "내용을 적어 주세요"; return; } location.href = `mailto:${CFG.email}?subject=${encodeURIComponent("[일랜시아노트 제보]")}&body=${encodeURIComponent(v)}`; $("fbm").textContent = "메일 앱이 열려요"; });
+$("mail").innerHTML = CFG.email ? `<a href="mailto:${CFG.email}" style="color:var(--sky)">${CFG.email}</a>` : "준비 중";
 
 /* update log */
-const LOG = [["11.27","일랜시아 시리즈 페이지 추가: 리플레이 온라인(스팀)·프로젝트 ER 일정 정리"],["11.27","용어 사전, 출시 D-day 알림 바, 공유 버튼, 휴대폰 하단 메뉴 추가"],["11.27","캐릭터 사전 생성 가이드, 출시 당일 정리 페이지 추가 · 사전예약 30만 돌파 소식"],["11.27","직업 15종 상세 페이지, 출시일·쿠폰·초보 가이드·추천·비교·영상·FAQ 페이지 추가"],["11.26","전투 직업 공식 초상화, 마우스 올리면 플레이 화면"],["11.26","사이트 이름을 일랜시아노트로 변경, elancianote.com 준비"],["11.26","전문 포털형 디자인으로 전면 개편, 직업 추천·FAQ 추가"],["11.26","유튜브 영상 14편, 유튜버·재생목록 6곳"],["11.26","직업·콘텐츠·보상 실제 게임 이미지, 게임 화면 갤러리"]];
+const LOG = [["11.27","사이트 소개·개인정보처리방침·이용약관·문의하기 페이지 분리, 제보를 메일로 바로 보내도록 변경"],["11.27","일랜시아 시리즈 페이지 추가: 리플레이 온라인(스팀)·프로젝트 ER 일정 정리"],["11.27","용어 사전, 출시 D-day 알림 바, 공유 버튼, 휴대폰 하단 메뉴 추가"],["11.27","캐릭터 사전 생성 가이드, 출시 당일 정리 페이지 추가 · 사전예약 30만 돌파 소식"],["11.27","직업 15종 상세 페이지, 출시일·쿠폰·초보 가이드·추천·비교·영상·FAQ 페이지 추가"],["11.26","전투 직업 공식 초상화, 마우스 올리면 플레이 화면"],["11.26","사이트 이름을 일랜시아노트로 변경, elancianote.com 준비"],["11.26","전문 포털형 디자인으로 전면 개편, 직업 추천·FAQ 추가"],["11.26","유튜브 영상 14편, 유튜버·재생목록 6곳"],["11.26","직업·콘텐츠·보상 실제 게임 이미지, 게임 화면 갤러리"]];
 $("log").innerHTML = LOG.map(([d,t]) => `<li><span style="color:var(--sub)">${d}</span> ${esc(t)}</li>`).join("");
 
 /* adsense (own domain only) */
@@ -660,7 +655,7 @@ if (CFG.adsense) {
 }
 
 /* search */
-const IDX = [["무도가 직업 정보", "/jobs/monk/", "무도가 글러브 근거리 광역 연타 직업"], ["투사 직업 정보", "/jobs/fighter/", "투사 창 속박 심판의 창 직업"], ["검객 직업 정보", "/jobs/swordmaster/", "검객 양손도 기절 단일 보스 직업"], ["자객 직업 정보", "/jobs/assassin/", "자객 단검 은신 치명타 중독 침묵 직업"], ["궁사 직업 정보", "/jobs/archer/", "궁사 활 원거리 출혈 초보 직업"], ["검사 직업 정보", "/jobs/swordsman/", "검사 탱커 한손검 보호막 방패 직업"], ["악사 직업 정보", "/jobs/bard/", "악사 힐러 하프 회복 서포터 직업"], ["자연인 직업 정보", "/jobs/angler/", "자연인 낚시 물고기 미끼 직업"], ["광부 직업 정보", "/jobs/miner/", "광부 채광 곡괭이 광맥 원석 직업"], ["미용사 직업 정보", "/jobs/stylist/", "미용사 헤어 머리 미용 직업"], ["대장장이 직업 정보", "/jobs/blacksmith/", "대장장이 무기 제작 스미스 직업"], ["재단사 직업 정보", "/jobs/tailor/", "재단사 옷 방어구 재단 직업"], ["목공사 직업 정보", "/jobs/carpenter/", "목공사 나무 목재 가공목 직업"], ["세공사 직업 정보", "/jobs/jeweler/", "세공사 보석 반지 목걸이 원석 직업"], ["연금술사 직업 정보", "/jobs/alchemist/", "연금술사 포션 물약 연금술 직업"], ["캐릭터 사전 생성 방법", "/precreate/", "사전 생성 닉네임 선점 서버 모바일"], ["출시 당일 정리", "/launch/", "출시 오픈 점검 서버 실시간"], ["출시일·일정", "/release/", "출시일 12월 1일 사전 다운로드 PC"], ["쿠폰·사전예약 보상", "/coupon/", "쿠폰 코드 보상 우편 비눗방울"], ["초보 가이드", "/guide/", "초보 처음 시작 매일 숙제"], ["용어 사전", "/glossary/", "용어 뜻 어빌리티 전직 스킬북"], ["일랜시아 시리즈·리플레이", "/replay/", "리플레이 온라인 스팀 프로젝트 ER 원작 PC"], ["직업 추천·파티 조합", "/recommend/", "추천 파티 조합 초보 솔로"], ["자주 묻는 질문", "/faq/", "FAQ 질문 답변"],["직업 도감","#dex","무도가 투사 검객 자객 궁사 검사 악사 자연인 광부 미용사 대장장이 재단사 목공사 세공사 연금술사"],["직업 추천","#recommend","추천 솔로 탱커 힐러 원거리"],["콘텐츠","#content","필드 보스 파티 던전 길드 방랑 상인 퀘스트 AI 모드"],["게임 화면","#gallery","스크린샷 이미지"],["첫날 가이드","#guide","처음 시작 사전 다운로드 캐릭터 생성"],["원작 비교","#compare","차이 원작 PC"],["공략 영상","#video","유튜브 영상 유튜버"],["소식","#news","프로젝트 ER 리마스터 넥슨 리플레이"],["자주 묻는 질문","#faq","FAQ 일랜시아M PC 보상 자동사냥"],["출시 일정","#rd","출시일 12월 1일 일정"],["쿠폰","#coupon","쿠폰 코드"],["사전예약 보상","#rewards","비눗방울 꽃무늬 미끼 보상"],["생활 직업 계산기","#calc","계산기 목표 며칠"],["오늘의 숙제","#todo","체크리스트 숙제"],["공식 링크","#chs","공식 카카오 구글 앱스토어 미니게임"],["개인정보처리방침","#privacy","개인정보 쿠키"]];
+const IDX = [["무도가 직업 정보", "/jobs/monk/", "무도가 글러브 근거리 광역 연타 직업"], ["투사 직업 정보", "/jobs/fighter/", "투사 창 속박 심판의 창 직업"], ["검객 직업 정보", "/jobs/swordmaster/", "검객 양손도 기절 단일 보스 직업"], ["자객 직업 정보", "/jobs/assassin/", "자객 단검 은신 치명타 중독 침묵 직업"], ["궁사 직업 정보", "/jobs/archer/", "궁사 활 원거리 출혈 초보 직업"], ["검사 직업 정보", "/jobs/swordsman/", "검사 탱커 한손검 보호막 방패 직업"], ["악사 직업 정보", "/jobs/bard/", "악사 힐러 하프 회복 서포터 직업"], ["자연인 직업 정보", "/jobs/angler/", "자연인 낚시 물고기 미끼 직업"], ["광부 직업 정보", "/jobs/miner/", "광부 채광 곡괭이 광맥 원석 직업"], ["미용사 직업 정보", "/jobs/stylist/", "미용사 헤어 머리 미용 직업"], ["대장장이 직업 정보", "/jobs/blacksmith/", "대장장이 무기 제작 스미스 직업"], ["재단사 직업 정보", "/jobs/tailor/", "재단사 옷 방어구 재단 직업"], ["목공사 직업 정보", "/jobs/carpenter/", "목공사 나무 목재 가공목 직업"], ["세공사 직업 정보", "/jobs/jeweler/", "세공사 보석 반지 목걸이 원석 직업"], ["연금술사 직업 정보", "/jobs/alchemist/", "연금술사 포션 물약 연금술 직업"], ["캐릭터 사전 생성 방법", "/precreate/", "사전 생성 닉네임 선점 서버 모바일"], ["출시 당일 정리", "/launch/", "출시 오픈 점검 서버 실시간"], ["출시일·일정", "/release/", "출시일 12월 1일 사전 다운로드 PC"], ["쿠폰·사전예약 보상", "/coupon/", "쿠폰 코드 보상 우편 비눗방울"], ["초보 가이드", "/guide/", "초보 처음 시작 매일 숙제"], ["용어 사전", "/glossary/", "용어 뜻 어빌리티 전직 스킬북"], ["일랜시아 시리즈·리플레이", "/replay/", "리플레이 온라인 스팀 프로젝트 ER 원작 PC"], ["직업 추천·파티 조합", "/recommend/", "추천 파티 조합 초보 솔로"], ["자주 묻는 질문", "/faq/", "FAQ 질문 답변"],["직업 도감","#dex","무도가 투사 검객 자객 궁사 검사 악사 자연인 광부 미용사 대장장이 재단사 목공사 세공사 연금술사"],["직업 추천","#recommend","추천 솔로 탱커 힐러 원거리"],["콘텐츠","#content","필드 보스 파티 던전 길드 방랑 상인 퀘스트 AI 모드"],["게임 화면","#gallery","스크린샷 이미지"],["첫날 가이드","#guide","처음 시작 사전 다운로드 캐릭터 생성"],["원작 비교","#compare","차이 원작 PC"],["공략 영상","#video","유튜브 영상 유튜버"],["소식","#news","프로젝트 ER 리마스터 넥슨 리플레이"],["자주 묻는 질문","#faq","FAQ 일랜시아M PC 보상 자동사냥"],["출시 일정","#rd","출시일 12월 1일 일정"],["쿠폰","#coupon","쿠폰 코드"],["사전예약 보상","#rewards","비눗방울 꽃무늬 미끼 보상"],["생활 직업 계산기","#calc","계산기 목표 며칠"],["오늘의 숙제","#todo","체크리스트 숙제"],["공식 링크","#chs","공식 카카오 구글 앱스토어 미니게임"],["개인정보처리방침","/privacy/","개인정보 쿠키 광고"],["문의하기","/contact/","문의 제보 이메일 저작권 삭제"]];
 const dlg = $("dlg"), q = $("q");
 const drawRes = () => { const v = q.value.trim().toLowerCase(); const r = IDX.filter(([t,,k]) => !v || (t+k).toLowerCase().includes(v));
   $("res").innerHTML = r.length ? (v ? r : r.slice(15,30)).map(([t,h,k]) => `<li><a href="${h}">${esc(t)}<span>${esc(k.split(" ").slice(0,3).join(" · "))}</span></a></li>`).join("") : `<li class="empty" style="margin:8px">검색 결과가 없어요</li>`; };
