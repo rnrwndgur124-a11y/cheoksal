@@ -9,8 +9,8 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#0e1013">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#22361d">
 <title>일랜시아 모바일 자연인 생활 직업 정보 | 낚시 | 일랜시아노트</title>
 <meta name="description" content="일랜시아 모바일 생활 직업 자연인: 물가에서 느긋하게 낚시하는 생활 직업이에요. 하는 일, 연계되는 직업, 시작 팁 정리.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -26,6 +26,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri@2.39.3/dist/galmuri.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="/assets/site.css">
 <style>
@@ -66,6 +67,122 @@
 .navlinks a.cur{color:var(--ink);background:var(--card)}.dbar{background:linear-gradient(90deg,rgb(217 177 95/.14),rgb(217 177 95/.04));border-bottom:1px solid rgb(217 177 95/.25);font-size:13.5px}.dbar .wrap{display:flex;align-items:center;gap:10px;min-height:38px;flex-wrap:wrap}.dbar b{color:var(--gold)}.dbar a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}.dbar .sp{margin-left:auto;color:var(--dim);font-size:12.5px}.share{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:22px 0 6px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px}.share span{font-size:13.5px;color:var(--sub);margin-right:auto}.share button{font:inherit;font-size:13.5px;padding:7px 12px;border-radius:9px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);cursor:pointer}.share button:hover{border-color:var(--gold2)}.upd{font-size:12.5px;color:var(--dim);margin:6px 0 0}.bnav{display:none}@media(max-width:860px){.bnav{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgb(14 16 19/.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom))}.bnav a{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--sub);padding:4px 0}.bnav a svg{width:21px;height:21px}.bnav a.on{color:var(--gold)}body{padding-bottom:64px}}.toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--ink);color:#111;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600;opacity:0;transition:opacity .2s;z-index:80;pointer-events:none}.toast.on{opacity:1}
 @media(max-width:860px){.hd{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:6px;gap:8px 16px}.hd .navlinks,.hd .nav{display:flex!important;order:3;flex-basis:100%;margin:0 -8px}.hd .nav a{padding:6px 10px;font-size:14px;flex:none}}@media(max-width:1000px){.art{grid-template-columns:minmax(0,1fr)}.side2{position:static}}
 @media(max-width:600px){.jobhead{grid-template-columns:minmax(0,1fr)}.jobhead img{max-width:260px}.grid2c{grid-template-columns:minmax(0,1fr)}}
+/* ===== ELANCIA THEME: parchment · meadow · wood · gold ===== */
+:root{color-scheme:light;--bg:#f4eedd;--bg2:#ece3cc;--card:#fffbf1;--card2:#f7efdb;--line:#e2d5b3;--line2:#cfbd92;--ink:#2a2416;--sub:#5a5140;--dim:#8a7e63;--gold:#d29b2e;--gold2:#a8761c;--goldtx:#8a5d0e;--jade:#3f7a35;--sky:#2b6ea6;--red:#b43a2c;--forest:#22361d;--forest2:#2f4a28;--cream:#f3ead2;--leaf:#5d8c3e}
+html{background:var(--bg)}
+body{background:radial-gradient(1200px 500px at 85% -10%,rgb(210 155 46/.10),transparent 60%),radial-gradient(900px 500px at -10% 30%,rgb(93 140 62/.08),transparent 60%),var(--bg);color:var(--ink)}
+::selection{background:#f1d48f;color:#2a2416}
+a{color:inherit}
+/* header */
+header{background:rgb(34 54 29/.96)!important;border-bottom:3px solid var(--gold)!important;box-shadow:0 2px 0 #7a5a17,0 10px 24px rgb(40 30 10/.18)}
+header .brand b,header .brand{color:#fbf3dc}
+header .brand small{color:#e2c07a!important;letter-spacing:.18em}
+header .nav a,header .navlinks a{color:#e6dcc0!important}
+header .nav a:hover,header .navlinks a:hover{color:#fff!important;background:rgb(255 255 255/.08)!important}
+header .navlinks a.cur{color:#22361d!important;background:#f0d58f!important}
+header button,header .ic{color:#efe6cc}
+.hdcta{background:linear-gradient(#f2c45a,#d29b2e)!important;color:#3a2808!important;box-shadow:0 3px 0 #8a5d0e;border:1px solid #8a5d0e}
+.hdcta:hover{filter:brightness(1.05)}
+/* D-day bar */
+.dbar{background:linear-gradient(90deg,#fbefc9,#f6ecd2)!important;border-bottom:1px solid #e2cf9c!important;color:#4a3f26}
+.dbar b{color:#fff!important;background:var(--red);padding:2px 8px;border-radius:6px;font-family:"Galmuri11",var(--font);font-weight:400;letter-spacing:.02em}
+.dbar a{color:#2f4a28!important;font-weight:600}
+.dbar .sp{color:#8a7e63!important}
+/* hero (keeps image, warm forest overlay, light text) */
+.hero{background:var(--forest)!important;border-bottom:3px solid var(--gold)!important}
+.hero .bg::after{background:linear-gradient(90deg,rgb(24 36 20/.94) 0%,rgb(24 36 20/.80) 38%,rgb(24 36 20/.30) 72%,rgb(24 36 20/.45) 100%)!important}
+.hero,.hero h1,.hero h2,.hero b,.hero strong{color:#fffaf0}
+.hero p{color:#e9e1c8!important}
+.hero .btn.sec{background:rgb(255 255 255/.10)!important;border-color:rgb(255 255 255/.35)!important;color:#fffaf0!important}
+.cdbox{background:rgb(255 250 238/.94)!important;border:2px solid var(--gold)!important;box-shadow:0 4px 0 #a8761c,0 16px 40px rgb(0 0 0/.25);color:var(--ink)}
+.cdbox *{color:inherit}
+.cdbox .t b{color:var(--forest2)!important}
+.cd div{background:#22361d!important;border:1px solid #3e5a33!important;color:#ffe9a8!important}
+.cd div *{color:#ffe9a8!important}
+.cd div span,.cd div small{color:#cfe0b8!important}
+.stats{background:rgb(255 250 238/.95)!important;border:1px solid var(--line2)!important;color:var(--ink)}
+.stats *{color:inherit}
+/* phero (subpage title band) */
+.phero{background:linear-gradient(180deg,#2f4a28 0%,#22361d 100%)!important;border-bottom:3px solid var(--gold)!important}
+.phero h1{color:#fffaf0}
+.phero p.sub{color:#e6dcc0!important}
+.phero .crumb,.phero .crumb a{color:#cbbf99!important}
+.phero .crumb a:hover{color:#fff!important}
+/* headings with pixel ornament */
+main h2,section>.wrap>h2,.sh h2,.art main h2{color:var(--forest2)}
+.art main h2::before,.sh h2::before{content:"";display:inline-block;width:10px;height:10px;margin-right:9px;vertical-align:2px;background:var(--gold);box-shadow:2px 2px 0 #8a5d0e;transform:rotate(45deg)}
+.art main p,.art main li,.art main dd{color:#3d3527!important}
+.kicker,.eyebrow,.sh small,.sec-k{font-family:"Galmuri11",var(--font);color:var(--goldtx)!important;letter-spacing:.06em}
+/* cards & panels */
+.panel,.box,.job,.vc,.rw article,.rw>*,.news article,.faq details,.jobhead,.share,.tbl,.cta-box,.mini-dex a,.pnav a,.gl,.steps li,.card,.empty,.note2{background:var(--card)!important;border-color:var(--line)!important;box-shadow:0 1px 0 #e9dcb9,0 6px 18px rgb(90 70 30/.06)}
+.panel .ph{border-color:var(--line)!important;background:linear-gradient(#fbf3de,#f6ecd3)}
+.panel .ph h3{color:var(--forest2)}
+.gl dt{background:#f6ecd3!important;color:var(--forest2)}
+.gl dt,.gl dd{border-color:var(--line)!important}
+.note2{background:#f8f1dd!important;color:#6b5f45!important;border-left:4px solid var(--gold)!important}
+.cta-box{background:linear-gradient(135deg,#fff6dc,#fdf9ee)!important;border:2px solid #e3c37a!important;box-shadow:0 3px 0 #d6b263}
+.cta-box p{color:#5a5140!important}
+.job .im,.rw .im,.jobhead img,.mini-dex img,.shot{background:#e7dcc0!important}
+.job .im .tag{background:rgb(34 54 29/.85)!important;color:#fff3cf!important;border-color:transparent!important}
+.job .im .hint{background:rgb(34 54 29/.8)!important}
+.job:hover,.mini-dex a:hover,.pnav a:hover{border-color:var(--gold)!important;transform:translateY(-2px);box-shadow:0 4px 0 #e0c785,0 12px 24px rgb(90 70 30/.10)}
+.job,.mini-dex a,.pnav a{transition:transform .15s,box-shadow .15s,border-color .15s}
+.mini-dex a.on{border-color:var(--gold)!important;box-shadow:0 0 0 2px var(--gold)}
+/* tables */
+.tbl table{background:var(--card)}
+.tbl th{background:#2f4a28!important;color:#f6ecd2!important;border-color:#2f4a28!important}
+.tbl td{border-color:var(--line)!important;color:#3d3527}
+.tbl tr:nth-child(even) td{background:#fbf5e6}
+.tbl td.hi{color:var(--jade)!important;font-weight:700}
+.tbl a.pick{color:var(--sky)!important}
+/* buttons */
+.btn.pri{background:linear-gradient(#f2c45a,#d29b2e)!important;color:#3a2808!important;border:1px solid #8a5d0e!important;box-shadow:0 3px 0 #8a5d0e}
+.btn.pri:hover{filter:brightness(1.05)}
+.btn.pri:active{transform:translateY(2px);box-shadow:0 1px 0 #8a5d0e}
+.btn.sec{background:#fffaf0!important;border:1px solid var(--line2)!important;color:var(--forest2)!important;box-shadow:0 2px 0 #e0cfa5}
+.btn.sec:hover{border-color:var(--gold)!important}
+.share button{background:#fffaf0!important;border-color:var(--line2)!important;color:var(--forest2)!important}
+/* tags */
+.tag{background:#f3ead2!important;border-color:#e0d0a8!important;color:#6b5a32!important}
+.tag.g{background:#fbefc9!important;border-color:#e8c977!important;color:#8a5d0e!important}
+.tag.j{background:#e6f0da!important;border-color:#b9d29f!important;color:#3f7a35!important}
+/* timeline / steps / faq */
+.tl li i{background:var(--card)!important;border-color:var(--line2)!important}
+.tl li.now i{background:var(--gold)!important;border-color:#8a5d0e!important;box-shadow:0 0 0 4px rgb(210 155 46/.25)!important}
+.steps li::before,.steps li>i{background:var(--forest2)!important;color:#ffe9a8!important;border-color:var(--forest2)!important}
+.faq summary{color:var(--forest2)}
+/* inputs */
+input,textarea,select{background:#fffdf7!important;border-color:var(--line2)!important;color:var(--ink)!important}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--gold)!important;border-color:var(--gold)!important}
+input[type=checkbox]{accent-color:var(--jade)}
+/* gallery captions keep dark */
+.gal figcaption,.gal figcaption *{color:#fff!important}
+/* links in content */
+[style*="color:var(--sky)"]{color:var(--sky)!important}
+/* search dialog, toast */
+.dlg .in{background:var(--card)!important;border-color:var(--line2)!important}
+.toast{background:var(--forest)!important;color:#fff3cf!important;border-color:#3e5a33!important}
+/* ads slot */
+.ad{background:repeating-linear-gradient(45deg,#f6edd6,#f6edd6 10px,#f1e6ca 10px,#f1e6ca 20px)!important;border-color:var(--line)!important;color:#a89a76!important}
+/* bottom nav */
+.bnav{background:rgb(34 54 29/.97)!important;border-top:3px solid var(--gold)!important}
+.bnav a{color:#d9ceaf!important}.bnav a.on{color:#ffd77a!important}
+/* footer */
+footer{background:#1f2e1b!important;color:#cfc4a6!important;border-top:3px solid var(--gold)!important}
+footer h4{color:#f0d58f!important}
+footer a{color:#e6dcc0!important}footer a:hover{color:#fff!important}
+footer p,footer li,footer span{color:#b9ae8f}
+/* misc dark leftovers */
+.bmbar,#bmbar{background:#22361d!important;color:#f3ead2!important}
+.links a{border-color:var(--line)!important}
+.links a:hover{background:#f8f0db!important}
+.upd{color:#8a7e63!important}
+.hero .stats b{color:var(--forest2)!important}
+.hero .stats span{color:#7a6f55!important}
+.hero .stats div{border-color:var(--line)!important}
+.hero .eyebrow{background:rgb(20 30 16/.55)!important;border-color:rgb(240 213 143/.55)!important;color:#ffe3a0!important;font-family:"Galmuri11",var(--font)}
+.hero .eyebrow i{background:#8fd16a!important}
+.hero h1 em,.hero h1 span,.hero h1 b{color:#f2c45a}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://elancianote.com/"}, {"@type": "ListItem", "position": 2, "name": "직업 도감", "item": "https://elancianote.com/jobs/"}, {"@type": "ListItem", "position": 3, "name": "자연인", "item": "https://elancianote.com/jobs/angler/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "일랜시아 모바일 자연인은 무엇을 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "물가에서 느긋하게 낚시하는 생활 직업이에요. 찌에 입질이 오면 낚아채서 크고 작은 물고기를 잡아요. 잡은 물고기는 요리 재료로 쓰여요."}}, {"@type": "Question", "name": "자연인과 함께 키우면 좋은 직업은?", "acceptedAnswer": {"@type": "Answer", "text": "사전예약 보상에 미끼 100개가 들어 있어서, 출시 첫날부터 바로 시작하기 좋아요."}}]}</script>
