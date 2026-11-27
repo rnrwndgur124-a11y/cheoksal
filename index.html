@@ -311,7 +311,7 @@ body{padding-bottom:64px}}
       <span><b>일랜시아노트</b><small>ELANCIA NOTE</small></span>
     </a>
     <nav class="nav" aria-label="주요 메뉴">
-      <a href="/jobs/">직업 도감</a><a href="/recommend/">직업 추천</a><a href="/precreate/">사전 생성</a><a href="/release/">출시일</a><a href="/coupon/">쿠폰·보상</a><a href="/guide/">초보 가이드</a><a href="/compare/">원작 비교</a><a href="/video/">공략 영상</a><a href="/faq/">FAQ</a>
+      <a href="/jobs/">직업 도감</a><a href="/recommend/">직업 추천</a><a href="/precreate/">사전 생성</a><a href="/release/">출시일</a><a href="/coupon/">쿠폰·보상</a><a href="/guide/">초보 가이드</a><a href="/compare/">원작 비교</a><a href="/replay/">리플레이·ER</a><a href="/video/">공략 영상</a><a href="/faq/">FAQ</a>
     </nav>
     <button class="sbtn" id="sbtn" type="button" aria-label="검색 열기"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m11 11 3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>직업, 쿠폰, 출시일 검색</span><kbd>/</kbd></button>
     <a class="hdcta" href="https://play.gameduo.net/el" target="_blank" rel="noopener">사전예약</a>
@@ -426,6 +426,7 @@ body{padding-bottom:64px}}
   <section class="sec" id="news">
     <div class="sh"><div><h2>소식</h2><p>기사와 공식 발표에서 확인된 내용만 모았어요.</p></div></div>
     <div class="news">
+      <article><span class="tag">시리즈</span><h3><a href="/replay/">스팀판 일랜시아 리플레이 온라인, 2027년 2월 체험판</a></h3><p>파플 스튜디오가 무료 2D MMORPG로 준비 중이에요. 모바일판과 무엇이 다른지 정리했어요.</p></article>
       <article><span class="tag g">11.27 속보</span><h3><a href="/precreate/">캐릭터 사전 생성 시작 · 사전예약 30만 돌파</a></h3><p>27일 0시부터 모바일에서 서버를 고르고 캐릭터를 미리 만들 수 있어요. 닉네임은 선착순이에요.</p></article>
       <article><span class="tag g">편의</span><h3>AI 모드 · 절전 모드</h3><p>게임을 꺼도 최대 24시간 자동 사냥이 이어져요. 직업별 전용 스킬은 스킬북으로 배워요.</p></article>
       <article><span class="tag g">협동</span><h3>새 협동 콘텐츠</h3><p>파티 던전(1~10단계), 길드 던전(5단계), 필드 보스 3종이 새로 생겼어요.</p></article>
@@ -486,7 +487,7 @@ body{padding-bottom:64px}}
     </div>
     <div>
       <h4>바로가기</h4>
-      <ul><li><a href="/jobs/">직업 도감</a></li><li><a href="/recommend/">직업 추천</a></li><li><a href="/precreate/">캐릭터 사전 생성</a></li><li><a href="/guide/">초보 가이드</a></li><li><a href="/coupon/">쿠폰·보상</a></li><li><a href="/glossary/">용어 사전</a></li><li><a href="/launch/">출시 당일 정리</a></li><li><a href="/faq/">자주 묻는 질문</a></li></ul>
+      <ul><li><a href="/jobs/">직업 도감</a></li><li><a href="/recommend/">직업 추천</a></li><li><a href="/precreate/">캐릭터 사전 생성</a></li><li><a href="/guide/">초보 가이드</a></li><li><a href="/coupon/">쿠폰·보상</a></li><li><a href="/glossary/">용어 사전</a></li><li><a href="/replay/">일랜시아 시리즈 · 리플레이</a></li><li><a href="/launch/">출시 당일 정리</a></li><li><a href="/faq/">자주 묻는 질문</a></li></ul>
     </div>
     <div>
       <h4>정책</h4>
@@ -648,7 +649,7 @@ $("fb").addEventListener("submit", e => { e.preventDefault(); const v = $("fbt")
 $("mail").textContent = CFG.email || "준비 중";
 
 /* update log */
-const LOG = [["11.27","용어 사전, 출시 D-day 알림 바, 공유 버튼, 휴대폰 하단 메뉴 추가"],["11.27","캐릭터 사전 생성 가이드, 출시 당일 정리 페이지 추가 · 사전예약 30만 돌파 소식"],["11.27","직업 15종 상세 페이지, 출시일·쿠폰·초보 가이드·추천·비교·영상·FAQ 페이지 추가"],["11.26","전투 직업 공식 초상화, 마우스 올리면 플레이 화면"],["11.26","사이트 이름을 일랜시아노트로 변경, elancianote.com 준비"],["11.26","전문 포털형 디자인으로 전면 개편, 직업 추천·FAQ 추가"],["11.26","유튜브 영상 14편, 유튜버·재생목록 6곳"],["11.26","직업·콘텐츠·보상 실제 게임 이미지, 게임 화면 갤러리"]];
+const LOG = [["11.27","일랜시아 시리즈 페이지 추가: 리플레이 온라인(스팀)·프로젝트 ER 일정 정리"],["11.27","용어 사전, 출시 D-day 알림 바, 공유 버튼, 휴대폰 하단 메뉴 추가"],["11.27","캐릭터 사전 생성 가이드, 출시 당일 정리 페이지 추가 · 사전예약 30만 돌파 소식"],["11.27","직업 15종 상세 페이지, 출시일·쿠폰·초보 가이드·추천·비교·영상·FAQ 페이지 추가"],["11.26","전투 직업 공식 초상화, 마우스 올리면 플레이 화면"],["11.26","사이트 이름을 일랜시아노트로 변경, elancianote.com 준비"],["11.26","전문 포털형 디자인으로 전면 개편, 직업 추천·FAQ 추가"],["11.26","유튜브 영상 14편, 유튜버·재생목록 6곳"],["11.26","직업·콘텐츠·보상 실제 게임 이미지, 게임 화면 갤러리"]];
 $("log").innerHTML = LOG.map(([d,t]) => `<li><span style="color:var(--sub)">${d}</span> ${esc(t)}</li>`).join("");
 
 /* adsense (own domain only) */
